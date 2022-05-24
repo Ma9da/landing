@@ -42,8 +42,20 @@
     -ms-border-radius: 20%;
     -o-border-radius: 20%;
 }
+.sliderForm input, .sliderForm textarea{
+    padding: 10px;
+    width: 100%;
+    margin: 12px 0;
+    border: 1px solid #ffff;
+    background-color: transparent;
+    color: #ffff;
+}
 .nav__radius{
     border-radius: 0px 0px 120px 120px;
+    -webkit-border-radius: 0px 0px 120px 120px;
+    -moz-border-radius: 0px 0px 120px 120px;
+    -ms-border-radius: 0px 0px 120px 120px;
+    -o-border-radius: 0px 0px 120px 120px;
 }
 .contactMap{
     width:80%;
