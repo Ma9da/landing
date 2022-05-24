@@ -16,7 +16,18 @@
     bottom: 0;
     left: 22%;
     text-align: left;
-    top: 11rem;
+    top: 19rem;
+    z-index: 9999;
+}
+.offcanvas-body{
+    display: flex;
+flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.offcanvas-end{
+    background: transparent;
+    width: 50%;
 }
 .slider__overlay{
     background-color: #000000a4;
