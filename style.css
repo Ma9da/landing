@@ -19,11 +19,14 @@
     top: 19rem;
     z-index: 9999;
 }
-.offcanvas-body{
+.offcanvas-body {
     display: flex;
-flex-direction: column;
-    align-content: center;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: right;
+    transform: translateY(27%);
+}
+.form__dismiss{
+    transform: translateY(-31%);
 }
 .offcanvas-end{
     background: transparent;
@@ -52,6 +55,16 @@ flex-direction: column;
     -moz-border-radius: 20%;
     -ms-border-radius: 20%;
     -o-border-radius: 20%;
+}
+.sliderForm{
+    background-color: rgba(255, 255, 255, 0.247);
+    padding: 20px;
+    height: fit-content;
+}
+.sliderTitle {
+    font-size: 50px !important;
+    padding: 13rem 0px !important;
+    font-weight: 700;
 }
 .sliderForm input, .sliderForm textarea{
     padding: 10px;
