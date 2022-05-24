@@ -140,11 +140,11 @@ z-index: 5;
 }
 .figure:hover .details__img-hover{
     opacity: 1;
-    transition: .2s ease-in-out;
-    -webkit-transition: .2s ease-in-out;
-    -moz-transition: .2s ease-in-out;
-    -ms-transition: .2s ease-in-out;
-    -o-transition: .2s ease-in-out;
+    transition: .4s ease-in-out;
+    -webkit-transition: .4s ease-in-out;
+    -moz-transition: .4s ease-in-out;
+    -ms-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
 }
 .details__caption-hover{
     display: none;
