@@ -14,7 +14,7 @@
 
 <body>
     <!-- ========== Start navbar ========== -->
-    <nav class="position-fixed w-100 mb-4 nav__radius navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg nav__radius top-0 position-absolute w-100 navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="./index.html">
                 <img src="./assets/logo.png" alt="" class="d-inline-block align-text-top">
@@ -23,24 +23,40 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link px-4 text-uppercase active" aria-current="page" href="./index.html">Home</a>
+                    </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link px-4 text-uppercase dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             about us
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="./chairman.html">board of directors</a></li>
-                            <li><a class="dropdown-item" href="./company.html">company</a></li>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-uppercase" href="./chairman.html">board of directors</a>
+                            </li>
+                            <li><a class="dropdown-item text-uppercase" href="./company.html">company</a></li>
                         </ul>
                     </li>
-                    <a class="nav-link" href="./projects.html">projects</a>
-                    <a class="nav-link" href="./news.html">news</a>
-                    <a class="nav-link" href="#">gallery</a>
-                    <a class="nav-link rounded-pill bg-secondary" href="./contact-us.html">contact us</a>
-                </div>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 text-uppercase" href="./projects.html">projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 text-uppercase" href="./news.html">news</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 text-uppercase" href="#">gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 text-uppercase rounded-pill bg-secondary"
+                            href="./contact-us.html">contact us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><i class="nav-link  fa-regular fa-globe"></i></li>
+                    <li class="nav-item"> <a class="nav-link">AR</a> </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -75,12 +91,13 @@
                             </div>
                             <div class="col-1">
                                 <button class="btn btn-dark fs-1 rounded-pill px-4" type="button"
-                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                                    aria-controls="offcanvasRight">
+                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1"
+                                    aria-controls="offcanvasRight1">
                                     <i class="fa-solid fa-chevron-left"></i>
                                 </button>
-                                <div class="offcanvas  offcanvas-end" tabindex="-1" id="offcanvasRight"
-                                    aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas  offcanvas-end" tabindex="-1" id="offcanvasRight1"
+                                    aria-labelledby="offcanvasRightLabel" data-bs-scroll="true"
+                                    data-bs-backdrop="false">
                                     <div class="offcanvas-body">
                                         <form class="sliderForm w-50" action="">
                                             <div class="d-flex justify-content-between">
@@ -133,12 +150,13 @@
                             </div>
                             <div class="col-1">
                                 <button class="btn btn-dark fs-1 rounded-pill px-4" type="button"
-                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                                    aria-controls="offcanvasRight">
+                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2"
+                                    aria-controls="offcanvasRight2">
                                     <i class="fa-solid fa-chevron-left"></i>
                                 </button>
-                                <div class="offcanvas  offcanvas-end" tabindex="-1" id="offcanvasRight"
-                                    aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas  offcanvas-end" tabindex="-1" id="offcanvasRight2"
+                                    aria-labelledby="offcanvasRightLabel" data-bs-scroll="true"
+                                    data-bs-backdrop="false">
                                     <div class="offcanvas-body">
                                         <form class="sliderForm w-50" action="">
                                             <div class="d-flex justify-content-between">
@@ -191,12 +209,13 @@
                             </div>
                             <div class="col-1">
                                 <button class="btn btn-dark fs-1 rounded-pill px-4" type="button"
-                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                                    aria-controls="offcanvasRight">
+                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight3"
+                                    aria-controls="offcanvasRight3">
                                     <i class="fa-solid fa-chevron-left"></i>
                                 </button>
-                                <div class="offcanvas  offcanvas-end" tabindex="-1" id="offcanvasRight"
-                                    aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas  offcanvas-end" tabindex="-1" id="offcanvasRight3"
+                                    aria-labelledby="offcanvasRightLabel" data-bs-scroll="true"
+                                    data-bs-backdrop="false">
                                     <div class="offcanvas-body">
                                         <form class="sliderForm w-50" action="">
                                             <div class="d-flex justify-content-between">
@@ -249,12 +268,13 @@
                             </div>
                             <div class="col-1">
                                 <button class="btn btn-dark fs-1 rounded-pill px-4" type="button"
-                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                                    aria-controls="offcanvasRight">
+                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight4"
+                                    aria-controls="offcanvasRight4">
                                     <i class="fa-solid fa-chevron-left"></i>
                                 </button>
-                                <div class="offcanvas  offcanvas-end" tabindex="-1" id="offcanvasRight"
-                                    aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas  offcanvas-end" tabindex="-1" id="offcanvasRight4"
+                                    aria-labelledby="offcanvasRightLabel" data-bs-scroll="true"
+                                    data-bs-backdrop="false">
                                     <div class="offcanvas-body">
                                         <form class="sliderForm w-50" action="">
                                             <div class="d-flex justify-content-between">
@@ -307,12 +327,13 @@
                             </div>
                             <div class="col-1">
                                 <button class="btn btn-dark fs-1 rounded-pill px-4" type="button"
-                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                                    aria-controls="offcanvasRight">
+                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight5"
+                                    aria-controls="offcanvasRight5">
                                     <i class="fa-solid fa-chevron-left"></i>
                                 </button>
-                                <div class="offcanvas  offcanvas-end" tabindex="-1" id="offcanvasRight"
-                                    aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas  offcanvas-end" tabindex="-1" id="offcanvasRight5"
+                                    aria-labelledby="offcanvasRightLabel" data-bs-scroll="true"
+                                    data-bs-backdrop="false">
                                     <div class="offcanvas-body">
                                         <form class="sliderForm w-50" action="">
                                             <div class="d-flex justify-content-between">
@@ -477,13 +498,13 @@
     <!-- ========== Start mission ========== -->
     <div class="mission">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6 col-sm-12">
+            <div class="row justify-content-end align-items-center">
+                <div class="col-lg-5 col-sm-12">
                     <h2 class="title"> <i class="fa-solid fa-bullseye"></i> our mission</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, voluptatibus optio?
-                        Deserunt
-                        ab aliquid quaerat reprehenderit vero iusto ipsa earum!
+                    <p class="lh-lg fs-4 text-muted">
+                        We seek to provide housing solutions that spreads happiness through providing a comprehensive
+                        real estate service that meets international standards and ensures customer satisfaction by our
+                        highly qualified professional team
                     </p>
                 </div>
                 <div class="col-6 d-none d-lg-block">
@@ -496,17 +517,17 @@
     <!-- ========== Start vision ========== -->
     <div class="vision">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row justify-content-between align-items-center">
                 <div class="col-6 d-none d-lg-block">
-                    <img src="./assets/vision.png" class="w-100" alt="">
+                    <img src="./assets/vision.png" class="w-100 h-100" alt="">
                 </div>
-                <div class="col-lg-6 col-sm-12">
+                <div class="col-lg-5 col-sm-12">
                     <i class="fa-solid fa-bullseye-arrow"></i>
                     <h2 class="title"><i class="fa-solid fa-gem"></i> our vision</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, voluptatibus optio?
-                        Deserunt
-                        ab aliquid quaerat reprehenderit vero iusto ipsa earum!
+                    <p class="lh-lg fs-4 text-muted">
+                        Details Real Estate Company is looking forward to create an integrated lifestyle for all its
+                        clients and to be the first choice for individuals who wants to own a home with the best
+                        residential quality level
                     </p>
                 </div>
             </div>
@@ -583,6 +604,13 @@
         </div>
     </section>
     <!-- ========== End contact ========== -->
+    <!-- ========== Start animationBg ========== -->
+    <div class="animationBg">
+        <div class="container-fluid text-center">
+            <img src="./assets//shutterstock_524543800 copy.png" alt="" class="w-100 animationPic">
+        </div>
+    </div>
+    <!-- ========== End animationBg ========== -->
     <!-- ========== Start footer ========== -->
     <footer>
         <div class="footer pt-3">

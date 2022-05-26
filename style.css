@@ -31,6 +31,7 @@
 .offcanvas-end{
     background: transparent;
     width: 50%;
+    border-left: none;
 }
 .slider__overlay{
     background-color: #000000a4;
@@ -75,11 +76,20 @@
     color: #ffff;
 }
 .nav__radius{
-    border-radius: 0px 0px 120px 120px;
-    -webkit-border-radius: 0px 0px 120px 120px;
-    -moz-border-radius: 0px 0px 120px 120px;
-    -ms-border-radius: 0px 0px 120px 120px;
-    -o-border-radius: 0px 0px 120px 120px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+@media only screen and (min-width:1024px) {
+    .nav__radius{
+        border-radius: 0px 0px 120px 120px;
+        -webkit-border-radius: 0px 0px 120px 120px;
+        -moz-border-radius: 0px 0px 120px 120px;
+        -ms-border-radius: 0px 0px 120px 120px;
+        -o-border-radius: 0px 0px 120px 120px;
+}
 }
 .contactMap{
     width:80%;
@@ -175,6 +185,28 @@ z-index: 5;
     -o-border-radius: 0;
     padding: 26px 121px;
 }
+.animationBg{
+    height: 50vh;
+    background-color: #F2F2F2;
+    overflow: hidden;
+}
+.animationPic{
+    position: relative;
+    animation: example;
+    -webkit-animation: example;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    0%   {left:0px; top:0px;}
+    10%   {left:100px; top:0px;}
+    20%  { left:200px; top:0px;}
+    50%  { left:250px; top:0px;}
+    75%  { left:300px; top:0px;}
+    85%  { left:350px; top:0px;}
+    90%  { left:400px; top:0px;}
+    100% {left:0px; top:0px;}
+}
 .footer li{
     padding-bottom: 15px;
 }
@@ -182,7 +214,7 @@ z-index: 5;
     background: #F2F0F0;
 }
 .vision{
-    background-color: #F2F0F0;
+    background-color: #ffff;
 }
 .footer{
     background-color: #000000;
@@ -227,10 +259,9 @@ z-index: 5;
 }
 /***** chairman *****/
 .chairman{
-    height: 100vh;
+    height: 95vh;
     background: linear-gradient( rgb(0 0 0 / 76%), rgba(0, 0, 0, 0.89)),url(./assets/cc3ecd58-36a5-41fc-a0de-a9a64c324732.png) no-repeat 50%;
     background-size: cover;
-    padding: 75px 0;
 }
 .message
     {
