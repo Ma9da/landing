@@ -126,19 +126,25 @@ z-index: 5;
     font-weight: 600;
 }
 .details-bg{
-    background: url(./assets/Subtraction\ 19.png) no-repeat;
+    background: linear-gradient( rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.911)),url(./assets/Subtraction\ 19.png) no-repeat;
     background-size: cover;
-    height: 50vh;
-    padding: 75px 0;
-}
-.details{
-    height: 95vh;
+    /* height: 50vh;
+    padding: 75px 0; */
 }
 .details__card-title{
     color: #000000;
     text-transform: capitalize;
     font-size: 25px;
     font-weight: 600;
+}
+@media only screen and (min-width:1024px) {
+    .details-bg{
+        height: 50vh;
+        background: url(./assets/Subtraction\ 19.png) no-repeat;
+    }
+    .details{
+        height: 90vh;
+    }
 }
 .details__img-hover{
     background: #00000087;
@@ -157,7 +163,12 @@ z-index: 5;
     -o-transition: .4s ease-in-out;
 }
 .details__caption-hover{
-    display: none;
+    display: block;
+}
+@media only screen and (min-width:1024px) {
+    .details__caption-hover{
+        display: none;
+    }
 }
 .figure:hover .details__caption-hover{
     display: block;
@@ -183,7 +194,12 @@ z-index: 5;
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     -o-border-radius: 0;
+    margin-bottom: 15px;
+}
+@media only screen and (min-width:1024px) {
+    .form__submit{
     padding: 26px 121px;
+    }
 }
 .animationBg{
     height: 50vh;
@@ -259,7 +275,7 @@ z-index: 5;
 }
 /***** chairman *****/
 .chairman{
-    height: 95vh;
+    padding: 75px 0;
     background: linear-gradient( rgb(0 0 0 / 76%), rgba(0, 0, 0, 0.89)),url(./assets/cc3ecd58-36a5-41fc-a0de-a9a64c324732.png) no-repeat 50%;
     background-size: cover;
 }
