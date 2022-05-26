@@ -284,7 +284,6 @@ z-index: 5;
 }
 .message
     {
-    height: 60vh;
     background: linear-gradient( rgb(0 0 0 / 76%), rgba(0, 0, 0, 0.911)),url(./assets/Subtraction\ 24.png) no-repeat ;
     background-position: center bottom;
     background-size: cover;
@@ -329,3 +328,6 @@ z-index: 5;
     padding: 75px 0;
 }
 /***** End news *****/
+.about{
+    padding: 75px 0;
+}
