@@ -298,7 +298,6 @@ z-index: 5;
 .projects-bg{
     background: linear-gradient( rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.911)),url(./assets/Subtraction\ 19.png) no-repeat ;
     background-size: cover;
-    height: 50vh;
     padding: 75px 0;
 }
 /***** End projects *****/
