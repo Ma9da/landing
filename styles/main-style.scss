@@ -898,33 +898,7 @@
         }
     }
 }
-html {
-    &[dir="rtl"] {
-        .attractions__features{
-            .features__list{
-                li{
-                    &:nth-child(odd){
-                        &:first-of-type{
-                            &::after{
-                                width: 0 !important;
-                            }
-                        }
-                        &:last-of-type{
-                            &::after{
-                                width: 100% !important;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .units__footer{
-            i{
-                transform: rotate(180deg) !important;
-            }
-        }
-    }
-}
+
 .navbar__customBrand{
     img{
         width: 120px !important;
@@ -938,6 +912,7 @@ html {
     }
 }
 .lang__buttonWrapper{
+    padding: 8px 24px;
     column-gap: 10px;
     .lang__button{
         display: contents !important;
@@ -989,7 +964,7 @@ html {
         display: flex;
         column-gap: 25px;
         position: absolute;
-        right: 50px;
+        right: 5%;
         bottom: 30px;
         button{
             background-color: white;
@@ -1028,5 +1003,46 @@ html {
 @keyframes moving {
     100%{
         transform: translateX(-4000px);
+    }
+}
+html {
+    &[dir="rtl"] {
+        .attractions__features{
+            .features__list{
+                li{
+                    &:nth-child(odd){
+                        &:first-of-type{
+                            &::after{
+                                width: 0 !important;
+                            }
+                        }
+                        &:last-of-type{
+                            &::after{
+                                width: 100% !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .units__footer{
+            i{
+                transform: rotate(180deg) !important;
+            }
+        }
+        .carousel__customIndicators,.carousel__customCaption{
+            right: 5% !important;
+        }
+        .slider__customControls{
+            justify-content: flex-end !important;
+            left: 5% !important;
+            button{
+                span{
+                    &:nth-of-type(1){
+                        transform: rotate(180deg) !important;
+                    }
+                }
+            }
+        }
     }
 }
