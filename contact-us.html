@@ -20,10 +20,9 @@
 
   <body class="bg-light-grey">
     <!-- ========== Start navbar ========== -->
-    <!-- <nav class="navbar navbar-expand-lg nav__radius w-100 navbar-dark bg-dark">
-      <div class="text-center">
-        <button class="lang__button">EN</button>
-      </div>
+    <nav
+      class="navbar navbar-expand-lg nav__radius top-0 position-absolute w-100 navbar-dark bg-dark"
+    >
       <div class="container">
         <a class="navbar-brand" href="./index.html">
           <img
@@ -121,62 +120,16 @@
               >
             </li>
           </ul>
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <i class="nav-link fa-solid fa-globe"></i>
-            </li>
+          <ul class="navbar-nav align-items-center">
+            <li class="lang__button nav-item"><i class="nav-link fa-solid fa-globe"></i></li>
             <li class="nav-item"><a class="nav-link">AR</a></li>
-          </ul> -->
-    <nav class="navbar navbar-expand-lg nav__radius top-0 position-absolute w-100 navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="./index.html">
-                <img src="./assets/logo.png" alt="" class="d-inline-block align-text-top">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link px-4 text-uppercase active" aria-current="page" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link px-4 text-uppercase dropdown-toggle" href="#" id="navbarDropdown"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            about us
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item text-uppercase" href="./chairman.html">board of directors</a>
-                            </li>
-                            <li><a class="dropdown-item text-uppercase" href="./company.html">company</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-4 text-uppercase" href="./projects.html">projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-4 text-uppercase" href="./news.html">news</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-4 text-uppercase" href="#">gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-4 text-uppercase rounded-pill bg-secondary"
-                            href="./contact-us.html">contact us</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav align-items-center">
-                    <li class="nav-item"><i class="nav-link  fa-solid fa-globe"></i></li>
-                    <li class="nav-item"> <a class="nav-link">AR</a> </li>
-                </ul>
-            </div>
+          </ul>
         </div>
       </div>
     </nav>
-    <!-- ========== End navbar ========== -->
+    <!-- ========== End navbar ========== -->  
     <!-- ========== Start contact ========== -->
-    <!-- <section class="contact">
+    <section class="contact">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-7 col-sm-12">
@@ -199,23 +152,19 @@
               </div>
             </div>
             <form action="">
-              <h3 data-lang="Or Send Us A Message:" class="d-none d-lg-block">
-                Or Send Us A Message:
-              </h3>
-              <label data-lang="Name" for="name" class="visually-hidden"
-                >Name</label
-              >
+              <h3  data-lang="Or Send Us A Message:" class="d-none d-lg-block">Or Send Us A Message:</h3>
+              
+              <label data-lang="Name" for="name" class="visually-hidden">Name</label>
               <input
-                class="form-control input__placeholder mb-4"
+                class="form-control mb-4"
                 type="text"
                 placeholder="Name"
                 id="name"
               />
-              <label data-lang="Email" for="email" class="visually-hidden"
-                >Email</label
-              >
+              <label data-lang="Email" for="email" class="visually-hidden">Email</label>
               <input
-                class="form-control input__placeholder mb-4"
+              
+                class="form-control mb-4"
                 type="email"
                 placeholder="Email"
                 id="email"
@@ -237,99 +186,32 @@
                   aria-describedby="basic-addon1"
                 />
               </div>
-              <label data-lang="Message" for="message" class="visually-hidden"
-                >Message</label
-              >
+              <label data-lang="Message" for="message" class="visually-hidden">Message</label>
               <textarea
-                class="input__placeholder form-control"
+                class="form-control"
                 name="message"
                 placeholder="Write Message"
                 id="message"
                 cols="10"
                 rows="5"
               ></textarea>
-              <button data-lang="Submit Now" class="btn fs-3 mt-5 form__submit">
-                Submit Now
-              </button>
+              <button
+              data-lang="Submit Now"
+                type="submit"
+                class="btn fs-3 mt-5 form__submit"
+              ></button>
             </form>
           </div>
           <div class="col-lg-5 col-sm-12">
-            <div class="contactMap">
-              <div class="mapouter">
-                <div class="gmap_canvas">
-                  <iframe
-                    id="gmap_canvas"
-                    src="https://maps.google.com/maps?q=%D9%85%D8%B9%D8%A7%D8%AF%D9%8A%20%D8%AC%D8%B1%D8%A7%D9%86%D8%AF%20%D9%85%D9%88%D9%84&t=k&z=13&ie=UTF8&iwloc=&output=embed"
-                    frameborder="0"
-                    scrolling="no"
-                    marginheight="0"
-                    marginwidth="0"
-                  ></iframe
-                  ><a href="https://fmovies-online.net"></a><br />
-                  <a
-                    data-lang="free google map"
-                    href="https://www.embedgooglemap.net"
-                    >free google map</a
-                  > -->
-    <section class="contact about">
-        <div class="container">
-            <div class="row align-items-center py-5">
-                <div class="col-lg-7 col-sm-12">
-                    <h1 class="title">contact us</h1>
-                    <div class="d-flex justify-content-between py-3 d-none d-lg-flex">
-                        <div class="d-flex align-items-baseline">
-                            <button class="btn btn-dark">
-                                <i class="fa-solid fs-4  fa-phone"></i>
-                            </button>
-                            <div>
-                                <span class="ms-3 fs-3">
-                                    920000718
-                                </span>
-                                <p class="ms-3 text-muted">Tall-Free</p>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-baseline">
-                            <button class="btn btn-dark">
-                                <i class="fa-solid fs-4 fa-envelope"></i>
-                            </button>
-                            <span class="ms-3 fs-3">
-                                info@details-re.com
-                            </span>
-                        </div>
-                    </div>
-                    <form action="">
-                        <h3 class="d-none d-lg-block">Or Send Us A Message:</h3>
-                        <label for="name" class="visually-hidden">Name</label>
-                        <input class="form-control mb-4" type="text" placeholder="Name" id="name">
-                        <label for="email" class="visually-hidden">Email</label>
-                        <input class="form-control mb-4" type="email" placeholder="Email" id="email">
-                        <select class="form-control mb-4">
-                            <option selected>
-                                <img src="./assets/saudi.png" alt="">
-                                saudi
-                            </option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon1">+966</span>
-                            <input type="text" class="form-control" aria-describedby="basic-addon1">
-                        </div>
-                        <label for="message" class="visually-hidden">Message</label>
-                        <textarea class="form-control" name="message" placeholder="Write Message" id="message" cols="10"
-                            rows="5"></textarea>
-                        <input type="submit" class="btn fs-3 mt-5 form__submit" value="Submit Now">
-                    </form>
-                </div>
-                <div class="col-lg-5 col-sm-12">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463879.26522846974!2d46.54234300535662!3d24.72493157427095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1653689286424!5m2!1sen!2sus"
-                        class="w-100" height="650" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-              </div>
-            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463879.26522846974!2d46.54234300535662!3d24.72493157427095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1653689286424!5m2!1sen!2sus"
+              class="w-100"
+              height="650"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </div>
@@ -348,231 +230,99 @@
     <!-- ========== End animationBg ========== -->
     <!-- ========== Start footer ========== -->
     <footer>
-      <!-- <div class="footer pt-3">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-4 col-sm-12">
-              <h4 data-lang="company" class="footer__title">company</h4>
-              <ul class="list-unstyled">
-                <li data-lang="kingdom of saudi arabia - riyadh">
-                  <span class="pe-3"
-                    ><i class="fa-solid fa-location-pin"></i
-                  ></span>
-                  kingdom of saudi arabia - riyadh
-                </li>
-                <li>
-                  <span class="pe-3"><i class="fa-solid fa-phone"></i></span>
-                  920000718
-                </li>
-                <li>
-                  <span class="pe-3"><i class="fa-solid fa-envelope"></i></span>
-                  info@details-re.com
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-2 col-sm-12">
-              <h4 data-lang="navigation" class="footer__title">navigation</h4>
-              <ul class="list-unstyled">
-                <li>
-                  <a
-                    data-lang="home"
-                    href="#"
-                    class="text-decoration-none text-light text-capitalize"
-                    >home</a
-                  >
-                </li>
-                <li>
-                  <a
-                    data-lang="about us"
-                    href="#"
-                    class="text-decoration-none text-light text-capitalize"
-                    >about us</a
-                  >
-                </li>
-                <li>
-                  <a
-                    data-lang="news"
-                    href="#"
-                    class="text-decoration-none text-light text-capitalize"
-                    >news</a
-                  >
-                </li>
-                <li>
-                  <a
-                    data-lang="contact"
-                    href="#"
-                    class="text-decoration-none text-light text-capitalize"
-                    >contact</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-2 col-sm-12">
-              <h4 data-lang="projects" class="footer__title">projects</h4>
-              <ul class="list-unstyled">
-                <li>
-                  <a
-                    data-lang="al malga"
-                    href="#"
-                    class="text-decoration-none text-light text-capitalize"
-                    >al malga</a
-                  >
-                </li>
-                <li>
-                  <a
-                    data-lang="al-Arrid"
-                    href="#"
-                    class="text-decoration-none text-light text-capitalize"
-                    >al-Arrid</a
-                  >
-                </li>
-                <li>
-                  <a
-                    data-lang="al-Narjis"
-                    href="#"
-                    class="text-decoration-none text-light text-capitalize"
-                    >al-Narjis</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-4 col-sm-4">
-              <figure>
-                <img class="w-100" src="./assets/logo.png" alt="" />
-              </figure>
-              <ul class="socials d-flex list-unstyled">
-                <li>
-                  <a href="#" id="facebook"
-                    ><i class="fa-brands fa-facebook-f"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="#" id="twitter"
-                    ><i class="fa-brands fa-twitter"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="#" id="instagram"
-                    ><i class="fa-brands fa-instagram"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="#" id="snapchat"
-                    ><i class="fa-brands fa-snapchat"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="#" id="youtube"
-                    ><i class="fa-brands fa-youtube"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="#" id="tiktok"
-                    ><i class="fa-brands fa-tiktok"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="#" id="linkedin"
-                    ><i class="fa-brands fa-linkedin"></i
-                  ></a>
-                </li>
-              </ul> -->
-        <div class="footer pt-3">
-            <div class="container">
-                <div class="row align-items-start pt-4">
-                    <div class="col-lg-4 col-sm-12">
-                        <h4 class="footer__title">
-                            company
-                        </h4>
-                        <ul class="list-unstyled">
-                            <li>
-                                <span class="pe-3"><i class="fa-solid fa-location-pin"></i></span>
-                                kindom of saudi arabia - riyadh
-                            </li>
-                            <li>
-                                <span class="pe-3"><i class="fa-solid fa-phone"></i></span>
-                                <a class="text-light text-decoration-none" href="tel:920000718">920000718</a>
-                            </li>
-                            <li>
-                                <span class="pe-3"><i class="fa-solid fa-envelope"></i></span>
-                                <a class="text-light text-decoration-none" href="mailto:info@details-re.com">info@details-re.com</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 col-sm-12">
-                        <h4 class="footer__title">
-                            navigation
-                        </h4>
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="./index.html" class="text-decoration-none text-light text-capitalize">home</a>
-                            </li>
-                            <li>
-                                <a href="./chairman.html" class="text-decoration-none text-light text-capitalize">about us</a>
-                            </li>
-                            <li>
-                                <a href="./news.html" class="text-decoration-none text-light text-capitalize">news</a>
-                            </li>
-                            <li>
-                                <a href="./contact-us.html" class="text-decoration-none text-light text-capitalize">contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 col-sm-12">
-                        <h4 class="footer__title">
-                            projects
-                        </h4>
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#" class="text-decoration-none text-light text-capitalize">al malga</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-decoration-none text-light text-capitalize">al-Arrid</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-decoration-none text-light text-capitalize">al-Narjis</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-sm-4">
-                        <figure>
-                            <img class="w-100" src="./assets/logo.png" alt="">
-                        </figure>
-                        <ul class="socials d-flex list-unstyled">
-                            <li><a href="#" id="facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a href="#" id="twitter"><i class="fa-brands fa-twitter"></i></a></li>
-                            <li><a href="#" id="instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="#" id="snapchat"><i class="fa-brands fa-snapchat"></i></a></li>
-                            <li><a href="#" id="youtube"><i class="fa-brands fa-youtube"></i></a></li>
-                            <li><a href="#" id="tiktok"><i class="fa-brands fa-tiktok"></i></a></li>
-                            <li><a href="#" id="linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      <div class="footer pt-3">
+          <div class="container">
+              <div class="row align-items-start pt-4">
+                  <div class="col-lg-4 col-sm-12">
+                      <h4 data-lang="company" class="footer__title">
+                          company
+                      </h4>
+                      <ul class="list-unstyled">
+                          <li>
+                              <span data-lang="kingdom of saudi arabia - riyadh" class="pe-3"><i class="fa-solid fa-location-pin"></i></span>
+                              kindom of saudi arabia - riyadh
+                          </li>
+                          <li>
+                              <span class="pe-3"><i class="fa-solid fa-phone"></i></span>
+                              <a class="text-light text-decoration-none" href="tel:920000718">920000718</a>
+                          </li>
+                          <li>
+                              <span class="pe-3"><i class="fa-solid fa-envelope"></i></span>
+                              <a class="text-light text-decoration-none"
+                                  href="mailto:info@details-re.com">info@details-re.com</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-2 col-sm-12">
+                      <h4 data-lang="navigation" class="footer__title">
+                          navigation
+                      </h4>
+                      <ul class="list-unstyled">
+                          <li>
+                              <a data-lang="home" href="./index.html" class="text-decoration-none text-light text-capitalize">home</a>
+                          </li>
+                          <li>
+                              <a data-lang="about us" href="./chairman.html" class="text-decoration-none text-light text-capitalize">about
+                                  us</a>
+                          </li>
+                          <li>
+                              <a data-lang="news" href="./news.html" class="text-decoration-none text-light text-capitalize">news</a>
+                          </li>
+                          <li>
+                              <a data-lang="contact" href="./contact-us.html"
+                                  class="text-decoration-none text-light text-capitalize">contact</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-2 col-sm-12">
+                      <h4 data-lang="projects" class="footer__title">
+                          projects
+                      </h4>
+                      <ul class="list-unstyled">
+                          <li>
+                              <a data-lang="al malga" href="#" class="text-decoration-none text-light text-capitalize">al malga</a>
+                          </li>
+                          <li>
+                              <a data-lang="al-Arrid" href="#" class="text-decoration-none text-light text-capitalize">al-Arrid</a>
+                          </li>
+                          <li>
+                              <a data-lang="al-Narjis" href="#" class="text-decoration-none text-light text-capitalize">al-Narjis</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-4 col-sm-4">
+                      <figure>
+                          <img class="w-100" src="./assets/logo.png" alt="">
+                      </figure>
+                      <ul class="socials d-flex list-unstyled">
+                          <li><a href="#" id="facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                          <li><a href="#" id="twitter"><i class="fa-brands fa-twitter"></i></a></li>
+                          <li><a href="#" id="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                          <li><a href="#" id="snapchat"><i class="fa-brands fa-snapchat"></i></a></li>
+                          <li><a href="#" id="youtube"><i class="fa-brands fa-youtube"></i></a></li>
+                          <li><a href="#" id="tiktok"><i class="fa-brands fa-tiktok"></i></a></li>
+                          <li><a href="#" id="linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+                      </ul>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
       <div class="copwrite">
-        <div class="container">
-          <div
-            class="row text-center justify-content-center align-items-center"
-          >
-            <div class="col-12">
-              <p class="p-2 mb-0">
-                <span data-lang="regxistering on this website, you accept out">
-                  regxistering on this website, you accept out
-                </span>
-                <a data-lang="terms of use" href="#">terms of use</a>
-                <span data-lang="and our"> and our </span>
-                <a data-lang="privacy policy" href="#">privacy policy</a>
-              </p>
-            </div>
+          <div class="container">
+              <div class="row text-center justify-content-center align-items-center ">
+                  <div class="col-12 ">
+                      <p class="p-2 mb-0">
+                        <span data-lang="regxistering on this website, you accept out">
+                          <a data-lang="terms of use" href="#">terms of use</a>
+                          <span data-lang="and our"> and our </span>
+                          <a data-lang="privacy policy" href="#">privacy policy</a>
+                        </p>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-    </footer>
-    <!-- ========== End footer ========== -->
+  </footer>
+  <!-- ========== End footer ========== -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
