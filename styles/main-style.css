@@ -1117,10 +1117,6 @@ html[dir="rtl"] .units__footer i {
 }
 
 .lang__buttonWrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
   -webkit-column-gap: 10px;
           column-gap: 10px;
 }
@@ -1216,5 +1212,40 @@ html[dir="rtl"] .units__footer i {
 
 .units__slider .carousel__customItem {
   max-height: 100vh;
+}
+
+.background__imageAnimationWrapper {
+  height: 500px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.background__imageAnimationWrapper .background__imageAnimation {
+  display: block;
+  width: 450%;
+  height: 125%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: url("../assests/shared/shared-background.jpg");
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: left center;
+  -webkit-animation: moving 30s linear infinite;
+          animation: moving 30s linear infinite;
+}
+
+@-webkit-keyframes moving {
+  100% {
+    -webkit-transform: translateX(-4000px);
+            transform: translateX(-4000px);
+  }
+}
+
+@keyframes moving {
+  100% {
+    -webkit-transform: translateX(-4000px);
+            transform: translateX(-4000px);
+  }
 }
 /*# sourceMappingURL=main-style.css.map */

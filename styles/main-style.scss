@@ -1006,3 +1006,27 @@ html {
         max-height: 100vh;
     }
 }
+.background__imageAnimationWrapper{
+    height: 500px;
+    position: relative;
+    overflow-x: hidden;
+    .background__imageAnimation{
+        display: block;
+        width: 450%;
+        height: 125%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-image: url("../assests/shared/shared-background.jpg");
+        background-repeat: repeat-x;
+        background-size: contain;
+        background-position: left center;
+        animation: moving 30s linear infinite;
+    }
+
+}
+@keyframes moving {
+    100%{
+        transform: translateX(-4000px);
+    }
+}
