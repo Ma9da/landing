@@ -1266,6 +1266,11 @@ html[dir="rtl"] .slider__customControls button span:nth-of-type(1) {
           transform: rotate(180deg) !important;
 }
 
+html[dir="rtl"] .new__projectsControls {
+  -webkit-column-gap: 8px;
+          column-gap: 8px;
+}
+
 html[dir="rtl"] .new__projectsControls button span:nth-of-type(1) {
   -webkit-transform: rotate(180deg) !important;
           transform: rotate(180deg) !important;
