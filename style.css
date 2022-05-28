@@ -125,9 +125,6 @@ z-index: 99999;
 }
 .details-bg{
     background: linear-gradient( rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.911)),url(./assets/Subtraction\ 19.png) no-repeat;
-    background-size: cover;
-    /* height: 50vh;
-    padding: 75px 0; */
 }
 .details__card-title{
     color: #000000;
@@ -137,11 +134,8 @@ z-index: 99999;
 }
 @media only screen and (min-width:1024px) {
     .details-bg{
-        height: 50vh;
         background: url(./assets/Subtraction\ 19.png) no-repeat;
-    }
-    .details{
-        height: 90vh;
+        background-size: contain;
     }
 }
 .details__img-hover{
@@ -162,6 +156,7 @@ z-index: 99999;
 }
 .details__caption-hover{
     opacity: 1;
+    background: rgba(255, 255, 255, 0.588);
 }
 @media only screen and (min-width:1024px) {
     .details__caption-hover{
