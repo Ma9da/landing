@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-lang="al malga">Al-Malga</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/main-style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/script.js"></script>
+  </head>
+  <body>
+    <!-- ========== Start navbar ========== -->
+    <nav
+      class="navbar navbar-expand-lg nav__radius top-0 position-absolute w-100 navbar-dark bg-dark"
+    >
+      <div class="container">
+        <a class="navbar__customBrand navbar-brand" href="./index.html">
+          <img
+            src="./assests/shared/details-logo.png"
+            alt=""
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-around"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                data-lang="Home"
+                class="nav-link px-4 text-uppercase active"
+                aria-current="page"
+                href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                data-lang="about us"
+                class="nav-link px-4 text-uppercase dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                about us
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a
+                    data-lang="board of directors"
+                    class="dropdown-item text-uppercase"
+                    href="./chairman.html"
+                    >board of directors</a
+                  >
+                </li>
+                <li>
+                  <a
+                    data-lang="company"
+                    class="dropdown-item text-uppercase"
+                    href="./company.html"
+                    >company</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                data-lang="projects"
+                class="nav-link px-4 text-uppercase"
+                href="./projects.html"
+                >projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                data-lang="news"
+                class="nav-link px-4 text-uppercase"
+                href="./news.html"
+                >news</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                data-lang="gallery"
+                class="nav-link px-4 text-uppercase"
+                href="#"
+                >gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                data-lang="contact us"
+                class="nav-link px-4 text-uppercase rounded-pill bg-secondary"
+                href="./contact-us.html"
+                >contact us</a
+              >
+            </li>
+          </ul>
+          <div class="lang__buttonWrapper d-flex align-items-center">
+            <button class="lang__button">
+              <span>
+                <i class="nav-link fa-solid fa-globe"></i>
+              </span>
+            </button>
+            <span class="lang__text">EN</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ========== End navbar ========== -->
+    <!-- ========== Start slider ========== -->
+    <div class="units__slider">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="false"
+      >
+        <div class="carousel__customIndicators carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-current="true"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="4"
+            aria-current="true"
+            aria-label="Slide 5"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="5"
+            aria-current="true"
+            aria-label="Slide 6"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="6"
+            aria-current="true"
+            aria-label="Slide 7"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="7"
+            aria-current="true"
+            aria-label="Slide 8"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="8"
+            aria-current="true"
+            aria-label="Slide 9"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="9"
+            aria-current="true"
+            aria-label="Slide 10"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="10"
+            aria-current="true"
+            aria-label="Slide 11"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="11"
+            aria-current="true"
+            aria-label="Slide 12"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item carousel__customItem active">
+            <img
+              src="./assests/shared/reception.jpg"
+              class="position-relative d-block w-100"
+              alt=""
+            />
+            <div
+              class="carousel__customCaption carousel-caption d-none d-md-flex align-items-end"
+            >
+              <div class="d-flex justify-content-start w-100">
+                <div class="custom__titleCaption">
+                  <h2 data-lang="reception" class="title text-light">
+                    reception
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel__customItem">
+            <img
+              src="./assests/shared/reception.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div
+              class="carousel__customCaption carousel-caption d-none d-md-flex align-items-end"
+            >
+              <div class="d-flex justify-content-start w-100">
+                <div class="custom__titleCaption">
+                  <h2 data-lang="reception" class="title text-light">
+                    reception
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel__customItem">
+            <img
+              src="./assests/shared/reception.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div
+              class="carousel__customCaption carousel-caption d-none d-md-flex align-items-end"
+            >
+              <div class="d-flex justify-content-start w-100">
+                <div class="custom__titleCaption">
+                  <h2 data-lang="reception" class="title text-light">
+                    reception
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel__customItem">
+            <img
+              src="./assests/shared/reception.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div
+              class="carousel__customCaption carousel-caption d-none d-md-flex align-items-end"
+            >
+              <div class="d-flex justify-content-start w-100">
+                <div class="custom__titleCaption">
+                  <h2 data-lang="reception" class="title text-light">
+                    reception
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel__customItem">
+            <img
+              src="./assests/shared/reception.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div
+              class="carousel__customCaption carousel-caption d-none d-md-flex align-items-end"
+            >
+              <div class="d-flex justify-content-start w-100">
+                <div class="custom__titleCaption">
+                  <h2 data-lang="reception" class="title text-light">
+                    reception
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel__customItem">
+            <img
+              src="./assests/shared/reception.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div
+              class="carousel__customCaption carousel-caption d-none d-md-flex align-items-end"
+            >
+              <div class="d-flex justify-content-start w-100">
+                <div class="custom__titleCaption">
+                  <h2 data-lang="reception" class="title text-light">
+                    reception
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel__customItem">
+            <img
+              src="./assests/shared/reception.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div
+              class="carousel__customCaption carousel-caption d-none d-md-flex align-items-end"
+            >
+              <div class="d-flex justify-content-start w-100">
+                <div class="custom__titleCaption">
+                  <h2 data-lang="reception" class="title text-light">
+                    reception
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel__customItem">
+            <img
+              src="./assests/shared/reception.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div
+              class="carousel__customCaption carousel-caption d-none d-md-flex align-items-end"
+            >
+              <div class="d-flex justify-content-start w-100">
+                <div class="custom__titleCaption">
+                  <h2 data-lang="reception" class="title text-light">
+                    reception
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel__customItem">
+            <img
+              src="./assests/shared/reception.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div
+              class="carousel__customCaption carousel-caption d-none d-md-flex align-items-end"
+            >
+              <div class="d-flex justify-content-start w-100">
+                <div class="custom__titleCaption">
+                  <h2 data-lang="reception" class="title text-light">
+                    reception
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel__customItem">
+            <img
+              src="./assests/shared/reception.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div
+              class="carousel__customCaption carousel-caption d-none d-md-flex align-items-end"
+            >
+              <div class="d-flex justify-content-start w-100">
+                <div class="custom__titleCaption">
+                  <h2 data-lang="reception" class="title text-light">
+                    reception
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel__customItem">
+            <img
+              src="./assests/shared/reception.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div
+              class="carousel__customCaption carousel-caption d-none d-md-flex align-items-end"
+            >
+              <div class="d-flex justify-content-start w-100">
+                <div class="custom__titleCaption">
+                  <h2 data-lang="reception" class="title text-light">
+                    reception
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel__customItem">
+            <img
+              src="./assests/shared/reception.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div
+              class="carousel__customCaption carousel-caption d-none d-md-flex align-items-end"
+            >
+              <div class="d-flex justify-content-start w-100">
+                <div class="custom__titleCaption">
+                  <h2 data-lang="reception" class="title text-light">
+                    reception
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__customControls">
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========== End slider ========== -->
+    <section class="project__infoLinks">
+      <div class="container">
+        <div class="link__containerWrapper row">
+          <div class="link__wrapper col-sm-7 col-md-6 col-lg-3">
+            <a
+              href="./al-malga.html"
+              target="_blank"
+              class="link d-flex flex-column justify-content-evenly align-items-center mx-auto"
+            >
+              <span data-lang="informations" class="text-center text-capitalize"
+                >informations</span
+              >
+              <figure class="mb-0">
+                <img src="./assests/shared/home.jpg" alt="" />
+              </figure>
+            </a>
+          </div>
+          <div class="link__wrapper col-sm-7 col-md-6 col-lg-3">
+            <a
+              href="./al-malga-units.html"
+              class="link d-flex flex-column justify-content-evenly align-items-center mx-auto"
+            >
+              <span data-lang="units" class="text-center text-capitalize"
+                >units</span
+              >
+              <figure class="mb-0">
+                <img src="./assests/shared/contract.jpg" alt="" />
+              </figure>
+            </a>
+          </div>
+          <div class="link__wrapper col-sm-7 col-md-6 col-lg-3">
+            <a
+              href="./services.html"
+              class="link d-flex flex-column justify-content-evenly align-items-center mx-auto"
+            >
+              <span data-lang="services" class="text-center text-capitalize"
+                >services</span
+              >
+              <figure class="mb-0">
+                <img src="./assests/shared/favorite.jpg" alt="" />
+              </figure>
+            </a>
+          </div>
+          <div class="link__wrapper col-sm-7 col-md-6 col-lg-3">
+            <a
+              class="link d-flex flex-column justify-content-evenly align-items-center mx-auto"
+            >
+              <span
+                data-lang="watch your unit"
+                class="text-center text-capitalize"
+                >watch your unit</span
+              >
+              <figure class="mb-0">
+                <img src="./assests/shared/binocular.jpg" alt="" />
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project__infoDescriptionMalga">
+      <div class="container">
+        <div class="row">
+          <div class="project__imageUnitWrapper col-lg-4">
+            <div
+              class="unit__info d-flex flex-column justify-content-between align-items-center bg-white"
+            >
+              <div
+                data-lang="al malga"
+                class="unit__infoHeader text-center text-capitalize"
+              >
+                al malga
+              </div>
+              <div class="unit__infoFooter d-flex flex-column text-capitalize">
+                <span data-lang="units" class="text-uppercase">units</span>
+                <span class="d-flex justify-content-start"> 14</span>
+                <span data-lang="a canvas of your scene" class="text-capitalize"
+                  >a canvas of your scene</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project__descriptionWrapper col-lg-8">
+            <div class="description__header">
+              <span data-lang="al malga" class="text-white text-capitalize"
+                >al malga</span
+              >
+            </div>
+            <div class="description__body d-flex flex-column">
+              <div class="description__bodyInfo d-flex">
+                <div class="description__building">
+                  <span>
+                    <i class="fa-solid fa-house"></i>
+                  </span>
+                  <span>1</span>
+                  <span data-lang="building" class="text-capitalize"
+                    >building</span
+                  >
+                </div>
+                <div class="description__apartments">
+                  <span>
+                    <i class="fa-solid fa-building"></i>
+                  </span>
+                  <span>14</span>
+                  <span data-lang="apartments">apartments</span>
+                </div>
+              </div>
+              <div
+                data-lang="residential building in the heart of saudi"
+                class="description__bodyTitle text-capitalize"
+              >
+                residential building in the heart of saudi
+              </div>
+            </div>
+            <div data-lang="al-malga-description" class="description__footer">
+              <p>
+                Al-Malqa is one of the elegant and modern distric in the north
+                of Riyadh. It is characterized by the availability of all
+                services & strategic location between Imam Saud bin Faisal
+                Street and Anas bin Malik Street and its close to King Fahd and
+                King Salman Road. The neighborhood includes public parks,
+                commercial centers and recreational centers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project__location">
+      <div class="location__mapWrapper w-100">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109150.06315284193!2d46.593439047743445!3d24.757747110860176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2seg!4v1653308970944!5m2!1sen!2seg"
+          width="600"
+          height="450"
+          style="border: 0; width: 100%"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="project__attractionsMalga text-center">
+      <div class="container-fluid">
+        <h2 data-lang="attractions" class="section__title text-capitalize">
+          attractions
+        </h2>
+        <div class="attractions__features">
+          <h4 data-lang="al malga" class="feature__projectName text-capitalize">
+            al malga
+          </h4>
+          <ul
+            class="features__list d-flex justify-content-between list-unstyled"
+          >
+            <li>
+              <div
+                class="feature__wrapper d-flex flex-column align-items-center"
+              >
+                <div
+                  data-lang="8 minutes"
+                  class="feature__time text-capitalize"
+                >
+                  8 minutes
+                </div>
+                <figure class="feature__image mb-0">
+                  <img
+                    src="./assests/al-malga/turki al-awwal.jpg"
+                    alt=""
+                    srcset=""
+                  />
+                </figure>
+                <div
+                  data-lang="turki al-awwal st."
+                  class="feature__title text-capitalize"
+                >
+                  turki al-awwal st.
+                </div>
+              </div>
+            </li>
+            <li>
+              <div
+                class="feature__wrapper d-flex flex-column align-items-center"
+              >
+                <div
+                  data-lang="5 minutes"
+                  class="feature__time text-capitalize"
+                >
+                  5 minutes
+                </div>
+                <figure class="feature__image mb-0">
+                  <img
+                    src="./assests/al-malga/Saudi German Hospital.jpg"
+                    alt=""
+                    srcset=""
+                  />
+                </figure>
+                <div
+                  data-lang="saudi german hospital"
+                  class="feature__title text-capitalize"
+                >
+                  saudi german hospital
+                </div>
+              </div>
+            </li>
+            <li>
+              <div
+                class="feature__wrapper d-flex flex-column align-items-center"
+              >
+                <div
+                  data-lang="8 minutes"
+                  class="feature__time text-capitalize"
+                >
+                  8 minutes
+                </div>
+                <figure class="feature__image mb-0">
+                  <img
+                    src="./assests/al-malga/Boulevard.jpg"
+                    alt=""
+                    srcset=""
+                  />
+                </figure>
+                <div
+                  data-lang="boulevard"
+                  class="feature__title text-capitalize"
+                >
+                  boulevard
+                </div>
+              </div>
+            </li>
+            <li>
+              <div
+                class="feature__wrapper d-flex flex-column align-items-center"
+              >
+                <div
+                  data-lang="6 minutes"
+                  class="feature__time text-capitalize"
+                >
+                  6 minutes
+                </div>
+                <figure class="feature__image mb-0">
+                  <img
+                    src="./assests/al-malga/Riyadh Hill Park.jpg"
+                    alt=""
+                    srcset=""
+                  />
+                </figure>
+                <div
+                  data-lang="riyadh hill park"
+                  class="feature__title text-capitalize"
+                >
+                  riyadh hill park
+                </div>
+              </div>
+            </li>
+            <li>
+              <div
+                class="feature__wrapper d-flex flex-column align-items-center"
+              >
+                <div
+                  data-lang="8 minutes"
+                  class="feature__time text-capitalize"
+                >
+                  8 minutes
+                </div>
+                <figure class="feature__image">
+                  <img
+                    src="./assests/al-malga/Al-Makan Mall.jpg"
+                    alt=""
+                    srcset=""
+                  />
+                </figure>
+                <div
+                  data-lang="al-makan mall"
+                  class="feature__title text-capitalize"
+                >
+                  al-makan mall
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Start footer ========== -->
+    <footer>
+      <div class="footer pt-3">
+        <div class="container">
+          <div class="row align-items-start pt-4">
+            <div class="col-lg-4 col-sm-12">
+              <h4 data-lang="company" class="footer__title">company</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <span class="pe-3"
+                    ><i class="fa-solid fa-location-pin"></i
+                  ></span>
+                  <span data-lang="Kingdom of Saudi Arabia - Riyadh">
+                    Kingdom of Saudi Arabia - Riyadh
+                  </span>
+                </li>
+                <li>
+                  <span class="pe-3"><i class="fa-solid fa-phone"></i></span>
+                  <a
+                    class="text-light text-decoration-none"
+                    href="tel:920000718"
+                    >920000718</a
+                  >
+                </li>
+                <li>
+                  <span class="pe-3"><i class="fa-solid fa-envelope"></i></span>
+                  <a
+                    class="text-light text-decoration-none"
+                    href="mailto:info@details-re.com"
+                    >info@details-re.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-sm-12">
+              <h4 data-lang="navigation" class="footer__title">navigation</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    data-lang="home"
+                    href="./index.html"
+                    class="text-decoration-none text-light text-capitalize"
+                    >home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    data-lang="about us"
+                    href="./chairman.html"
+                    class="text-decoration-none text-light text-capitalize"
+                    >about us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    data-lang="news"
+                    href="./news.html"
+                    class="text-decoration-none text-light text-capitalize"
+                    >news</a
+                  >
+                </li>
+                <li>
+                  <a
+                    data-lang="contact"
+                    href="./contact-us.html"
+                    class="text-decoration-none text-light text-capitalize"
+                    >contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-sm-12">
+              <h4 data-lang="projects" class="footer__title">projects</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    data-lang="al malga"
+                    href="#"
+                    class="text-decoration-none text-light text-capitalize"
+                    >al malga</a
+                  >
+                </li>
+                <li>
+                  <a
+                    data-lang="al-Arrid"
+                    href="#"
+                    class="text-decoration-none text-light text-capitalize"
+                    >al-Arrid</a
+                  >
+                </li>
+                <li>
+                  <a
+                    data-lang="al-Narjis"
+                    href="#"
+                    class="text-decoration-none text-light text-capitalize"
+                    >al-Narjis</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-sm-4">
+              <figure>
+                <img
+                  class="w-100"
+                  src="./assests/shared/details-logo.png"
+                  alt=""
+                />
+              </figure>
+              <ul class="socials d-flex list-unstyled">
+                <li>
+                  <a href="#" id="facebook"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" id="twitter"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" id="instagram"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" id="snapchat"
+                    ><i class="fa-brands fa-snapchat"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" id="youtube"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" id="tiktok"
+                    ><i class="fa-brands fa-tiktok"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" id="linkedin"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copwrite">
+        <div class="container">
+          <div
+            class="row text-center justify-content-center align-items-center"
+          >
+            <div class="col-12">
+              <p class="p-2 mb-0">
+                <span data-lang="Regxistering on this website, you accept out">
+                  Registering on this website, you accept out
+                </span>
+                <a data-lang="Terms of use" href="#">Terms of use</a>
+                <span data-lang="and our"> and our </span>
+                <a data-lang="Privacy Policy" href="#">Privacy policy</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ========== End footer ========== -->
+  </body>
+</html>
