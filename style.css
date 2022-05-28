@@ -12,17 +12,17 @@
     top: 0;
 }
 .carousel-caption {
-    right: 0;
+    inset-inline-end: 0;
     bottom: 0;
-    left: 22%;
-    text-align: left;
+    inset-inline-start: 22%;
+    text-align: start;
     top: 19rem;
     z-index: 9999;
 }
 .offcanvas-body {
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: end;
     transform: translateY(27%);
 }
 .form__dismiss{
@@ -30,8 +30,8 @@
 }
 .offcanvas-end{
     background: transparent;
-    width: 50%;
-    border-left: none;
+    width: 85%;
+    border-inline-start: none;
 }
 .slider__overlay{
     background-color: #000000a4;
@@ -64,8 +64,10 @@
 }
 .sliderTitle {
     font-size: 50px !important;
-    padding: 13rem 0px !important;
     font-weight: 700;
+    position:absolute;
+    right:0;
+    bottom:0;
 }
 .sliderForm input, .sliderForm textarea{
     padding: 10px;
@@ -91,21 +93,17 @@
         -o-border-radius: 0px 0px 120px 120px;
 }
 }
-.contactMap{
-    width:80%;
-}
 iframe#gmap_canvas {
     width: 100%;
-    height: 50vh;
 }
 @media only screen and (min-width:1024px) {
     .contactMap{
-        width: 80%;
-        padding: 0.9375rem 1.25rem 0;
+        width: 100%;
     }
     iframe#gmap_canvas {
         width: 100%;
-        height: 50vh;
+        height: 500px;
+        padding-top: 20px;
     }
 }
 nav.bg-dark{
@@ -163,15 +161,15 @@ z-index: 5;
     -o-transition: .4s ease-in-out;
 }
 .details__caption-hover{
-    display: block;
+    opacity: 1;
 }
 @media only screen and (min-width:1024px) {
     .details__caption-hover{
-        display: none;
+        opacity: 0;
     }
 }
 .figure:hover .details__caption-hover{
-    display: block;
+    opacity: 1;
     transition: .2s ease;
     -webkit-transition: .2s ease;
     -moz-transition: .2s ease;
@@ -217,14 +215,14 @@ z-index: 5;
     animation-iteration-count: infinite;
 }
 @keyframes example {
-    0%   {left:0px; top:0px;}
-    10%   {left:100px; top:0px;}
-    20%  { left:200px; top:0px;}
-    50%  { left:250px; top:0px;}
-    75%  { left:300px; top:0px;}
-    85%  { left:350px; top:0px;}
-    90%  { left:400px; top:0px;}
-    100% {left:0px; top:0px;}
+    0%   { inset-inline-start:0px;   top:0px;}
+    10%  { inset-inline-start:100px; top:0px;}
+    20%  { inset-inline-start:200px; top:0px;}
+    50%  { inset-inline-start:250px; top:0px;}
+    75%  { inset-inline-start:300px; top:0px;}
+    85%  { inset-inline-start:350px; top:0px;}
+    90%  { inset-inline-start:400px; top:0px;}
+    100% { inset-inline-start:0px;   top:0px;}
 }
 .footer li{
     padding-bottom: 15px;
@@ -319,10 +317,9 @@ z-index: 5;
 .carousel-control-next, .carousel-control-prev{
     background-color: #EFEFEF;
     height: fit-content;
-    padding: 26px;
+    padding: 18px;
     width: auto;
-    top: 23rem !important;
-    right: 70rem;
+    position: unset;
 }
 .newProject{
     padding: 75px 0;
@@ -330,4 +327,7 @@ z-index: 5;
 /***** End news *****/
 .about{
     padding: 75px 0;
+}
+.about .title{
+    font-size: 50px;
 }
