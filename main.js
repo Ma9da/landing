@@ -1,9 +1,13 @@
 var scrollPosition = window.scrollY;
-var offCanvas = document.getElementsByClassName('offcanvas')[0];
+var offCanvas = document.getElementsByClassName('offcanvas');
 // remove pop out form
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     scrollPosition = window.scrollY;
-    if (scrollPosition >= 30) {
-        offCanvas.classList.remove('show');
+    for (let i = 0; i <= offCanvas.length; i++) {
+        if(offCanvas[i]){
+            if (scrollPosition >= 30) {
+                offCanvas[i].classList.remove('show');
+            }
+        }
     }
 });

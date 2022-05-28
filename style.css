@@ -108,7 +108,7 @@ iframe#gmap_canvas {
 }
 nav.bg-dark{
 background: #00000078 !important;
-z-index: 5;
+z-index: 99999;
 }
 .title{
     font-size: 40px;
