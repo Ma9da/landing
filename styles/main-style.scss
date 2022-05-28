@@ -1044,5 +1044,14 @@ html {
                 }
             }
         }
+        .new__projectsControls{
+            button{
+                span{
+                    &:nth-of-type(1){
+                        transform: rotate(180deg) !important;
+                    }
+                }
+            }
+        }
     }
 }
