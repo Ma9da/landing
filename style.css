@@ -24,14 +24,14 @@
 	justify-content: end;
 	align-items: center;
 }
-@media (min-width:992px) {
-	.offcanvas-body{
-		padding-inline-end: 100px;	
+@media (min-width: 992px) {
+	.offcanvas-body {
+		padding-inline-end: 100px;
 	}
 }
 
 .offcanvas-end {
-	background: rgba(0, 0, 0, .75);
+	background: rgba(0, 0, 0, 0.75);
 	width: 100%;
 	border-inline-start: none;
 }
@@ -114,7 +114,7 @@ nav.bg-dark {
 	z-index: 3;
 }
 .title {
-	font-size: 40px;
+	font-size: 40px !important;
 	text-transform: uppercase;
 	color: #000000;
 	padding: 20px 0;
@@ -256,7 +256,11 @@ nav.bg-dark {
 .mission {
 	background: #f2f0f0;
 }
-.mission img{
+.mission .title,
+.vision .title {
+	font-size: 35px !important;
+}
+.mission img {
 	mix-blend-mode: multiply;
 }
 .vision {
@@ -277,24 +281,24 @@ nav.bg-dark {
 	text-transform: capitalize;
 	color: #b2c7d6;
 }
-footer .footer__followUs{
+footer .footer__followUs {
 	position: relative;
 	overflow: hidden;
 }
 footer .footer__followUs::before,
-.footer__followUs::after{
-	content:"";
+.footer__followUs::after {
+	content: "";
 	position: absolute;
 	top: 50%;
 	width: 50%;
 	height: 2px;
 	background-color: #707070;
 }
-footer .footer__followUs::before{
-	left: -40px ;
+footer .footer__followUs::before {
+	left: -40px;
 }
-footer .footer__followUs::after{
-	right: -40px ;
+footer .footer__followUs::after {
+	right: -40px;
 }
 
 .socials a {
@@ -398,7 +402,12 @@ footer .footer__followUs::after{
 	-o-border-radius: 50% 0 0 50%;
 	background: #b2c7d6;
 	color: #fff;
-	padding: 28px 35px;
+	padding: 10px 15px;
+}
+@media only screen and (min-width: 1024px) {
+	.floating__btn {
+		padding: 28px 35px;
+	}
 }
 .slider__form-label {
 	position: absolute;
