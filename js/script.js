@@ -201,6 +201,7 @@ const nextPagePreview = () => {
   currentPage++;
   currentPageNumber.innerHTML = currentPage;
   changeLanguage();
+  setPageNumbers();
 };
 const prevPagePreview = () => {
   if (currentPage === 1) return;
