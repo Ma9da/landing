@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+
     <link rel="stylesheet" href="./styles/bootstrap.min.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./styles/main-style.css" />
@@ -137,6 +138,7 @@
         id="carouselExampleCaptions"
         class="carousel slide"
         data-bs-ride="carousel"
+        data-bs-interval="false"
       >
         <div class="carousel-indicators">
           <button
@@ -952,9 +954,9 @@
       <div class="container-fluid">
         <div class="row justify-content-end align-items-center">
           <div class="col-lg-5 col-sm-12">
-            <h2 data-lang="our mission" class="title">
+            <h2 class="title">
               <i class="fa-solid fa-bullseye"></i>
-              our mission
+              <span data-lang="our mission">our mission</span>
             </h2>
             <p data-lang="mission-description" class="lh-lg fs-4 text-muted">
               We seek to provide housing solutions that spreads happiness
@@ -964,7 +966,9 @@
             </p>
           </div>
           <div class="col-6 d-none d-lg-block">
-            <img src="./assets/mission.png" class="w-100" alt="" />
+            <figure class="mb-0">
+              <img src="./assets/mission.jpg" class="w-100" alt="" />
+            </figure>
           </div>
         </div>
       </div>
@@ -978,8 +982,9 @@
             <img src="./assets/vision.png" class="w-100 h-100" alt="" />
           </div>
           <div class="col-lg-5 col-sm-12">
-            <h2 data-lang="our vision" class="title">
-              <i class="fa-solid fa-gem"></i> our vision
+            <h2 class="title">
+              <i class="fa-solid fa-gem"></i>
+              <span data-lang="our vision">our vision</span>
             </h2>
             <p data-lang="vision-description" class="lh-lg fs-4 text-muted">
               Details Real Estate Company is looking forward to create an
@@ -1038,15 +1043,38 @@
                 placeholder="Email"
                 id="email"
               />
-              <select class="form-control mb-4">
-                <option data-lang="saudi" selected>
-                  <img src="./assets/saudi.png" alt="" />
-                  saudi
-                </option>
-                <option data-lang="One" value="1">One</option>
-                <option data-lang="Two" value="2">Two</option>
-                <option data-lang="Three" value="3">Three</option>
+
+              <select class="form__select form-control mb-4">
+                <option
+                  data-country="saudi"
+                  data-flag="./assests/shared/saudi.jpg"
+                  data-number="+966"
+                  selected
+                ></option>
+                <option
+                  data-country="egypt"
+                  data-flag="./assests/shared/egypt.jpg"
+                  data-number="+20"
+                ></option>
               </select>
+              <div class="form__selectCountryWrapper mb-3">
+                <button
+                  type="button"
+                  class="country__select form-control d-flex w-100"
+                  value=""
+                >
+                  <span><i class="fa-solid fa-caret-down"></i></span>
+                  <div
+                    class="country__info d-flex flex-column align-items-center justify-content-center"
+                  >
+                    <figure class="mb-0">
+                      <img src="./assests/shared/saudi.jpg" alt="" />
+                    </figure>
+                    <span class="text-capitalize">saudi</span>
+                  </div>
+                </button>
+              </div>
+
               <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">+966</span>
                 <input
@@ -1070,7 +1098,9 @@
                 data-lang="Submit Now"
                 type="submit"
                 class="btn fs-3 mt-5 form__submit"
-              ></button>
+              >
+                Submit Now
+              </button>
             </form>
           </div>
           <div class="col-lg-5 col-sm-12">
@@ -1088,21 +1118,11 @@
       </div>
     </section>
     <!-- ========== End contact ========== -->
-    <!-- ========== End contact ========== -->
     <!-- ========== Start animationBg ========== -->
-    <!-- <div class="animationBg d-none d-lg-block">
-      <div class="container-fluid text-center">
-        <img
-          src="./assets//shutterstock_524543800 copy.png"
-          alt=""
-          class="w-100 animationPic"
-        />
-      </div>
-    </div> -->
-
     <section class="background__imageAnimationWrapper">
       <div class="background__imageAnimation"></div>
     </section>
+    <!-- ========== End animationBg ========== -->
     <!-- ========== Start footer ========== -->
     <footer>
       <div class="footer pt-3">
@@ -1204,10 +1224,16 @@
               </ul>
             </div>
             <div class="col-lg-4 col-sm-4">
-              <figure>
+              <figure class="w-75 mx-auto">
                 <img class="w-100" src="./assets/logo.png" alt="" />
               </figure>
-              <ul class="socials d-flex list-unstyled">
+              <div
+                data-lang="follow us"
+                class="footer__followUs text-capitalize w-75 text-center mt-3 mb-2 mx-auto"
+              >
+                follow us
+              </div>
+              <ul class="socials d-flex justify-content-center list-unstyled">
                 <li>
                   <a href="#" id="facebook"
                     ><i class="fa-brands fa-facebook-f"></i

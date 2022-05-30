@@ -290,3 +290,78 @@ const unitsFilterForm = document.querySelector("#units__filterForm");
 unitsFilterForm?.addEventListener("submit", (e) => {
   e.preventDefault();
 });
+/* --------------------------- Form Option Select --------------------------- */
+const selectOptionWrapper = document.querySelector(
+  ".form__selectCountryWrapper",
+);
+const countrySelect = document.querySelector(".country__select");
+const addCountryList = () => {
+  const formSelectOptions = [
+    ...document.querySelector(".form__select").children,
+  ];
+  const countryList = `<ul class="country__list list-unstyled mb-3">
+  ${formSelectOptions
+    .map((option) => {
+      return `  <li
+    class="country__Iteminfo d-flex align-items-center justify-content-between"
+  >
+    <figure class="mb-0">
+      <img src="${option.dataset.flag}" alt="" />
+    </figure>
+    <span data-lang="${option.dataset.country}" class="text-capitalize">${option.dataset.country}</span>
+  </li>`;
+    })
+    .join(" ")}
+</ul>`;
+  selectOptionWrapper.insertAdjacentHTML("beforeend", countryList);
+};
+addCountryList();
+const countryList = document.querySelector(".country__list");
+countrySelect.addEventListener("click", () => {
+  countryList.classList.toggle("active");
+});
+const setSelectedOption = (currentOption) => {
+  const formSelectOptions = [
+    ...document.querySelector(".form__select").children,
+  ];
+  formSelectOptions.forEach((option) => {
+    option.removeAttribute("selected");
+  });
+  const selectedOption = formSelectOptions.filter(
+    (option) => option.dataset.country === currentOption,
+  )[0];
+  selectedOption.setAttribute("selected", "selected");
+  return selectedOption;
+};
+const selectCountry = () => {
+  const countryList = document.querySelector(".country__list");
+  countryList.addEventListener("click", (e) => {
+    const itemImage = e.target
+      .closest(".country__Iteminfo")
+      .querySelector("img");
+    const itemName = e.target
+      .closest(".country__Iteminfo")
+      .querySelector("span");
+    const countrySelectedFlag = document.querySelector(".country__select img");
+    const countrySelectedName = document.querySelector(
+      ".country__select span:last-child",
+    );
+    countrySelectedFlag.src = itemImage.src;
+    countrySelectedName.innerHTML = itemName.innerHTML;
+    setSelectedOption(itemName.innerHTML);
+    changeCountryNumberKey(itemName.innerHTML);
+    countryList.classList.remove("active");
+  });
+};
+selectCountry();
+
+const changeCountryNumberKey = (countryName) => {
+  const countryNumberCode = document.querySelector("#basic-addon1");
+  const formSelectOptions = [
+    ...document.querySelector(".form__select").children,
+  ];
+  const selected = formSelectOptions.filter((option) =>
+    option.hasAttribute("selected"),
+  )[0];
+  countryNumberCode.innerHTML = selected.dataset.number;
+};

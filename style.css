@@ -114,7 +114,7 @@ z-index: 99999;
     font-size: 40px;
     text-transform: uppercase;
     color: #000000;
-    padding: 20px 0;
+    /* padding: 20px 0; */
     font-weight: 700;
 }
 .sub__title{
@@ -175,6 +175,13 @@ z-index: 99999;
     background-color: #F2F2F2;
     padding: 35px 0;
 }
+/* .contact select option{ 
+    background-image: url("./assests/shared/flag.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+} */
 .bg-light-grey{
     background-color: #F2F2F2;
 }
@@ -225,12 +232,33 @@ z-index: 99999;
 .mission{
     background: #F2F0F0;
 }
+.mission img{
+    mix-blend-mode: multiply;
+}
 .vision{
     background-color: #ffff;
 }
 .footer{
     background-color: #000000;
     color: #ffff;
+}
+.footer__followUs{
+    position: relative;
+    overflow-x: hidden;
+}
+.footer__followUs::before,
+.footer__followUs::after{
+    content: "";
+    position: absolute;
+    left: -45px;
+    top: 50%;
+    width: 50%;
+    height: 2px;
+    background-color: #707070;
+}
+.footer__followUs::after{
+    right: -45px;
+    margin-inline-start: auto;
 }
 .copwrite{
     background-color: #B2C7D6;

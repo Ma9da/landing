@@ -1,5 +1,8 @@
 {
   "EN": {
+    "egypt": "egypt",
+    "oman": "oman",
+    "follow us": "follow us",
     "Kingdom of Saudi Arabia - Riyadh": "Kingdom of Saudi Arabia - Riyadh",
     "reception": "reception",
     "Chairman": "Chairman",
@@ -103,7 +106,7 @@
     "ground floor": "ground floor",
     "first floor": "first floor",
     "second floor": "second floor",
-    "third__floor": "third__floor",
+    "third floor": "third floor",
     "rooms": "rooms",
     "search": "search",
     "number": "number",
@@ -153,6 +156,9 @@
     "more secure": "more secure"
   },
   "AR": {
+    "egypt": "مصر",
+    "oman": "عمان",
+    "follow us": "تابعنا",
     "Kingdom of Saudi Arabia - Riyadh": "المملكة العربية السعودية - الرياض",
     "reception": "استقبال",
     "Chairman": "رئيس مجلس الادارة",
