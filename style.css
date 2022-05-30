@@ -7,7 +7,7 @@
 	width: 170px;
 }
 .carousel-indicators {
-	bottom: 13rem;
+	bottom: 0;
 	flex-direction: column;
 	top: 0;
 }
@@ -256,10 +256,10 @@ nav.bg-dark {
 .mission {
 	background: #f2f0f0;
 }
-.mission .mission__description{
+.mission .mission__description {
 	margin-inline-start: auto;
 }
-.mission p{
+.mission p {
 	text-align: justify;
 }
 .mission .title,
@@ -272,10 +272,10 @@ nav.bg-dark {
 .vision {
 	background-color: #ffff;
 }
-.vision .vision__description{
+.vision .vision__description {
 	margin-inline-end: auto;
 }
-.vision p{
+.vision p {
 	text-align: justify;
 }
 .footer {
@@ -293,8 +293,8 @@ nav.bg-dark {
 	text-transform: capitalize;
 	color: #b2c7d6;
 }
-@media (max-width:991.98px) {
-	footer .footer__logoImage{
+@media (max-width: 991.98px) {
+	footer .footer__logoImage {
 		width: 50% !important;
 	}
 }
@@ -380,13 +380,17 @@ footer .footer__followUs::after {
 	padding: 24px;
 	background: #b2c7d6;
 	display: inline-block;
-	transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
-	border-radius: 12px;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	-ms-border-radius: 12px;
-	-o-border-radius: 12px;
+	border-radius: 20px;
+	transform: rotate(-45deg);
 }
+.gem-shape img {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+}
+
 /***** End company *****/
 /***** news *****/
 .carousel-control-next,
