@@ -155,7 +155,10 @@ const showUnitsData = (currentunits) => {
               <div class='info__footer'>
                 <div class='unit__description d-flex flex-wrap'>
                   <div class="d-flex align-items-center">
-                    <span data-lang="room" class='text-uppercase'>2 room</span>
+                    <span  class='text-uppercase'>2
+                    <span data-lang="room">room</span>
+          
+                     </span>
                     <span></span>
                   </div>
                   <div class="d-flex align-items-center">
@@ -163,7 +166,7 @@ const showUnitsData = (currentunits) => {
                     <span></span>
                   </div>
                   <div class="d-flex align-items-center">
-                    <span data-lang="bathroom" class='text-uppercase'>2 bathroom</span>
+                    <span  class='text-uppercase'>2 <spn data-lang="bathroom">bathroom</spn></span>
                     <span></span>
                   </div>
                     <div class="d-flex align-items-center">
@@ -200,8 +203,7 @@ const nextPagePreview = () => {
   if (currentLang === "EN") changePageDirection(currentLang);
   currentPage++;
   currentPageNumber.innerHTML = currentPage;
-  changeLanguage();
-  setPageNumbers();
+  getUnitsData();
 };
 const prevPagePreview = () => {
   if (currentPage === 1) return;
@@ -209,8 +211,7 @@ const prevPagePreview = () => {
   if (currentLang === "EN") changePageDirection(currentLang);
   currentPage--;
   currentPageNumber.innerHTML = currentPage;
-  changeLanguage();
-  setPageNumbers();
+  getUnitsData();
 };
 nextPageButton?.addEventListener("click", nextPagePreview);
 nextPage?.addEventListener("click", nextPagePreview);
