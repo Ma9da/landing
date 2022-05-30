@@ -24,9 +24,15 @@
 	justify-content: end;
 	align-items: center;
 }
+@media (min-width:992px) {
+	.offcanvas-body{
+		padding-inline-end: 100px;	
+	}
+}
+
 .offcanvas-end {
-	background: #00000096;
-	width: 85%;
+	background: rgba(0, 0, 0, .75);
+	width: 100%;
 	border-inline-start: none;
 }
 .slider__overlay {
@@ -250,6 +256,9 @@ nav.bg-dark {
 .mission {
 	background: #f2f0f0;
 }
+.mission img{
+	mix-blend-mode: multiply;
+}
 .vision {
 	background-color: #ffff;
 }
@@ -268,6 +277,26 @@ nav.bg-dark {
 	text-transform: capitalize;
 	color: #b2c7d6;
 }
+footer .footer__followUs{
+	position: relative;
+	overflow: hidden;
+}
+footer .footer__followUs::before,
+.footer__followUs::after{
+	content:"";
+	position: absolute;
+	top: 50%;
+	width: 50%;
+	height: 2px;
+	background-color: #707070;
+}
+footer .footer__followUs::before{
+	left: -40px ;
+}
+footer .footer__followUs::after{
+	right: -40px ;
+}
+
 .socials a {
 	color: #ffff;
 	font-size: 20px;

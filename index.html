@@ -137,6 +137,7 @@
         id="carouselExampleCaptions"
         class="carousel slide"
         data-bs-ride="carousel"
+        data-bs-interval="false"
       >
         <div class="carousel-indicators">
           <button
@@ -176,7 +177,7 @@
         </div>
         <!-- start floating button -->
         <button
-          class="floating__btn btn fs-4 d-none d-md-block"
+          class="floating__btn btn fs-4"
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasRight1"
@@ -195,7 +196,7 @@
           data-bs-backdrop="false"
         >
           <div class="offcanvas-body">
-            <form class="sliderForm w-50 text-light" action="">
+            <form class="sliderForm w-lg-50 text-light" action="">
               <div class="d-flex justify-content-between">
                 <h3 data-lang="Register your interest">
                   Register your interest
@@ -210,13 +211,9 @@
               </div>
               <div class="d-flex justify-content-between">
                 <div class="position-relative inputWidth">
-                  <label
-                    data-lang="username"
-                    class="slider__form-label"
-                    for="sliderUsername"
-                  >
+                  <label class="slider__form-label" for="sliderUsername">
                     <span class="me-2"><i class="fa-solid fa-user"></i></span>
-                    username
+                    <span data-lang="username">username</span>
                   </label>
                   <input
                     class="slider__form-input"
@@ -226,13 +223,9 @@
                   />
                 </div>
                 <div class="position-relative inputWidth">
-                  <label
-                    data-lang="phone"
-                    class="slider__form-label"
-                    for="sliderPhone"
-                  >
+                  <label class="slider__form-label" for="sliderPhone">
                     <span class="me-2"><i class="fa-solid fa-phone"></i></span>
-                    phone
+                    <span data-lang="phone"> phone </span>
                   </label>
                   <input
                     class="slider__form-input"
@@ -243,13 +236,9 @@
                 </div>
               </div>
               <div class="position-relative">
-                <label
-                  data-lang="email"
-                  class="slider__form-label"
-                  for="sliderEmail"
-                >
+                <label class="slider__form-label" for="sliderEmail">
                   <span class="me-2"><i class="fa-solid fa-envelope"></i></span>
-                  email
+                  <span data-lang="email"> email </span>
                 </label>
                 <input
                   class="slider__form-input"
@@ -851,7 +840,7 @@
               </ul>
             </div>
             <div class="col-lg-4 col-sm-4">
-              <figure class="w-75 mx-auto">
+              <figure class="w-75 mx-lg-auto">
                 <img class="w-100" src="./assets/logo.png" alt="" />
               </figure>
               <div
