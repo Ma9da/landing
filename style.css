@@ -293,6 +293,11 @@ nav.bg-dark {
 	text-transform: capitalize;
 	color: #b2c7d6;
 }
+@media (max-width:991.98px) {
+	footer .footer__logoImage{
+		width: 50% !important;
+	}
+}
 footer .footer__followUs {
 	position: relative;
 	overflow: hidden;

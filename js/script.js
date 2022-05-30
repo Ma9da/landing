@@ -339,11 +339,12 @@ countryList &&
     const itemImage = clickedCountry.querySelector("img");
     const itemName = clickedCountry.querySelector("span");
     const countrySelectedFlag = document.querySelector(".country__select img");
-    const countrySelectedName = document.querySelector(
+    let countrySelectedName = document.querySelector(
       ".country__select span:last-child",
     );
     countrySelectedFlag.src = itemImage.src;
     countrySelectedName.innerHTML = itemName.innerHTML;
+    countrySelectedName.dataset.lang = itemName.dataset.lang;
     setSelectedOption(itemName.innerHTML);
     changeCountryNumberKey(itemName.innerHTML);
     countryList.classList.remove("active");
