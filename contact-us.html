@@ -131,9 +131,9 @@
     </nav>
     <!-- ========== End navbar ========== -->
     <!-- ========== Start contact ========== -->
-    <section class="contact about">
+    <section class="contact">
       <div class="container">
-        <div class="row align-items-center py-5">
+        <div class="row align-items-center">
           <div class="col-lg-7 col-sm-12">
             <h1 data-lang="contact us" class="title">contact us</h1>
             <div class="d-flex justify-content-between py-3 d-none d-lg-flex">
@@ -162,7 +162,7 @@
                 >Name</label
               >
               <input
-                class="form-control mb-4"
+                class="input__placeholder form-control mb-4"
                 type="text"
                 placeholder="Name"
                 id="name"
@@ -171,20 +171,51 @@
                 >Email</label
               >
               <input
-                class="form-control mb-4"
+                class="input__placeholder form-control mb-4"
                 type="email"
                 placeholder="Email"
                 id="email"
               />
-              <select class="form-control mb-4">
-                <option data-lang="saudi" selected>
-                  <img src="./assets/saudi.png" alt="" />
+
+              <select class="form__select d-none form-control mb-4">
+                <option
+                  data-lang="saudi"
+                  class="text-capitalize"
+                  data-country="saudi"
+                  data-flag="./assests/shared/saudi.jpg"
+                  data-number="+966"
+                  selected
+                >
                   saudi
                 </option>
-                <option data-lang="One" value="1">One</option>
-                <option data-lang="Two" value="2">Two</option>
-                <option data-lang="Three" value="3">Three</option>
+                <option
+                  data-lang="egypt"
+                  class="text-capitalize"
+                  data-country="egypt"
+                  data-flag="./assests/shared/egypt.jpg"
+                  data-number="+20"
+                >
+                  egypt
+                </option>
               </select>
+              <div class="form__selectCountryWrapper mb-3">
+                <button
+                  type="button"
+                  class="country__select form-control d-flex w-100"
+                  value=""
+                >
+                  <span><i class="fa-solid fa-caret-down"></i></span>
+                  <div
+                    class="country__info d-flex flex-column align-items-center justify-content-center"
+                  >
+                    <figure class="mb-0">
+                      <img src="./assests/shared/saudi.jpg" alt="" />
+                    </figure>
+                    <span data-lang="saudi" class="text-capitalize">saudi</span>
+                  </div>
+                </button>
+              </div>
+
               <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">+966</span>
                 <input
@@ -197,7 +228,7 @@
                 >Message</label
               >
               <textarea
-                class="form-control"
+                class="input__placeholder form-control"
                 name="message"
                 placeholder="Write Message"
                 id="message"
@@ -208,7 +239,9 @@
                 data-lang="Submit Now"
                 type="submit"
                 class="btn fs-3 mt-5 form__submit"
-              ></button>
+              >
+                Submit Now
+              </button>
             </form>
           </div>
           <div class="col-lg-5 col-sm-12">
@@ -226,21 +259,12 @@
       </div>
     </section>
     <!-- ========== End contact ========== -->
-    <!-- ========== Start animationBg ========== -->
-    <!-- <div class="animationBg d-none d-lg-block">
-      <div class="container-fluid text-center">
-        <img
-          src="./assets//shutterstock_524543800 copy.png"
-          alt=""
-          class="w-100 animationPic"
-        />
-      </div>
-    </div> -->
+    <!-- ========== Start AnimationBg ========== -->
     <section class="background__imageAnimationWrapper">
       <div class="background__imageAnimation"></div>
     </section>
 
-    <!-- ========== End animationBg ========== -->
+    <!-- ========== End AnimationBg ========== -->
     <!-- ========== Start footer ========== -->
     <footer>
       <div class="footer pt-3">

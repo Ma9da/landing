@@ -645,7 +645,7 @@
                 >Name</label
               >
               <input
-                class="form-control mb-4"
+                class="input__placeholder form-control mb-4"
                 type="text"
                 placeholder="Name"
                 id="name"
@@ -654,24 +654,32 @@
                 >Email</label
               >
               <input
-                class="form-control mb-4"
+                class="input__placeholder form-control mb-4"
                 type="email"
                 placeholder="Email"
                 id="email"
               />
 
-              <select class="form__select form-control mb-4">
+              <select class="form__select d-none form-control mb-4">
                 <option
+                  data-lang="saudi"
+                  class="text-capitalize"
                   data-country="saudi"
                   data-flag="./assests/shared/saudi.jpg"
                   data-number="+966"
                   selected
-                ></option>
+                >
+                  saudi
+                </option>
                 <option
+                  data-lang="egypt"
+                  class="text-capitalize"
                   data-country="egypt"
                   data-flag="./assests/shared/egypt.jpg"
                   data-number="+20"
-                ></option>
+                >
+                  egypt
+                </option>
               </select>
               <div class="form__selectCountryWrapper mb-3">
                 <button
@@ -686,7 +694,7 @@
                     <figure class="mb-0">
                       <img src="./assests/shared/saudi.jpg" alt="" />
                     </figure>
-                    <span class="text-capitalize">saudi</span>
+                    <span data-lang="saudi" class="text-capitalize">saudi</span>
                   </div>
                 </button>
               </div>
@@ -703,7 +711,7 @@
                 >Message</label
               >
               <textarea
-                class="form-control"
+                class="input__placeholder form-control"
                 name="message"
                 placeholder="Write Message"
                 id="message"

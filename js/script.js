@@ -12,12 +12,12 @@ let prevUrl;
 const setLinkPath = () => {
   prevUrl = document.referrer;
   if (prevUrl.includes("al-malga")) {
-    links[0].setAttribute("href", "./al-malga.html");
-    links[1].setAttribute("href", "./al-malga-units.html");
+    links[0]?.setAttribute("href", "./al-malga.html");
+    links[1]?.setAttribute("href", "./al-malga-units.html");
   }
   if (prevUrl.includes("al-arrid")) {
-    links[0].setAttribute("href", "./al-arrid.html");
-    links[1].setAttribute("href", "./al-arrid-units.html");
+    links[0]?.setAttribute("href", "./al-arrid.html");
+    links[1]?.setAttribute("href", "./al-arrid-units.html");
   }
 };
 setLinkPath();
@@ -196,14 +196,19 @@ const getTranslateData = async () => {
 window.addEventListener("load", getTranslateData);
 const nextPagePreview = () => {
   if (currentPage === maxPage) return;
+  let currentLang = localStorage.getItem("currentLanguage");
+  if (currentLang === "EN") changePageDirection(currentLang);
   currentPage++;
   currentPageNumber.innerHTML = currentPage;
-  setPageNumbers();
+  changeLanguage();
 };
 const prevPagePreview = () => {
   if (currentPage === 1) return;
+  let currentLang = localStorage.getItem("currentLanguage");
+  if (currentLang === "EN") changePageDirection(currentLang);
   currentPage--;
   currentPageNumber.innerHTML = currentPage;
+  changeLanguage();
   setPageNumbers();
 };
 nextPageButton?.addEventListener("click", nextPagePreview);
@@ -228,22 +233,21 @@ const changeLanguage = () => {
   let inputsPlaceholder = [...document.querySelectorAll(".input__placeholder")];
   let currentLang = localStorage.getItem("currentLanguage");
   if (currentLang === "EN") {
-    handleEnglishChange();
-    addBootstrapLtr();
-    if (inputsPlaceholder.length) {
-      inputsPlaceholder[0].placeholder = "الاسم";
-      inputsPlaceholder[1].placeholder = "البريد الالكتروني";
-      inputsPlaceholder[2].placeholder = "اكتب رسالة";
-    }
-  } else {
-    handleArabicChange();
-    addBootstrapRtl();
     if (inputsPlaceholder.length) {
       inputsPlaceholder[0].placeholder = "Name";
       inputsPlaceholder[1].placeholder = "Email";
       inputsPlaceholder[2].placeholder = "Write Message";
     }
+    handleEnglishChange();
+  } else {
+    if (inputsPlaceholder.length) {
+      inputsPlaceholder[0].placeholder = "الاسم";
+      inputsPlaceholder[1].placeholder = "البريد الالكتروني";
+      inputsPlaceholder[2].placeholder = "اكتب رسالة";
+    }
+    handleArabicChange();
   }
+  changePageDirection(currentLang);
 };
 const handleArabicChange = () => {
   const currentLang = langButton.nextElementSibling.innerHTML;
@@ -257,11 +261,10 @@ const handleEnglishChange = () => {
     ele.innerText = wordsData[currentLang][ele.getAttribute("data-lang")];
   });
 };
-const addBootstrapRtl = () => {
-  document.querySelector("html").dir = "rtl";
-};
-const addBootstrapLtr = () => {
-  document.querySelector("html").dir = "ltr";
+const changePageDirection = (currentLang) => {
+  currentLang === "EN"
+    ? (document.querySelector("html").dir = "ltr")
+    : (document.querySelector("html").dir = "rtl");
 };
 /* -------------------------- Add Unit Status Class ------------------------- */
 const addBackgroundClass = () => {
@@ -295,10 +298,13 @@ const selectOptionWrapper = document.querySelector(
   ".form__selectCountryWrapper",
 );
 const countrySelect = document.querySelector(".country__select");
+countrySelect?.addEventListener("click", () => {
+  countryList.classList.toggle("active");
+});
+let formSelectOptions;
 const addCountryList = () => {
-  const formSelectOptions = [
-    ...document.querySelector(".form__select").children,
-  ];
+  if (!document.querySelector(".form__select")) return;
+  formSelectOptions = [...document.querySelector(".form__select").children];
   const countryList = `<ul class="country__list list-unstyled mb-3">
   ${formSelectOptions
     .map((option) => {
@@ -308,7 +314,7 @@ const addCountryList = () => {
     <figure class="mb-0">
       <img src="${option.dataset.flag}" alt="" />
     </figure>
-    <span data-lang="${option.dataset.country}" class="text-capitalize">${option.dataset.country}</span>
+    <span data-lang="${option.dataset.country}" class="text-capitalize">${option.innerHTML}</span>
   </li>`;
     })
     .join(" ")}
@@ -316,32 +322,22 @@ const addCountryList = () => {
   selectOptionWrapper.insertAdjacentHTML("beforeend", countryList);
 };
 addCountryList();
-const countryList = document.querySelector(".country__list");
-countrySelect.addEventListener("click", () => {
-  countryList.classList.toggle("active");
-});
 const setSelectedOption = (currentOption) => {
-  const formSelectOptions = [
-    ...document.querySelector(".form__select").children,
-  ];
   formSelectOptions.forEach((option) => {
     option.removeAttribute("selected");
   });
   const selectedOption = formSelectOptions.filter(
-    (option) => option.dataset.country === currentOption,
+    (option) => option.innerHTML === currentOption,
   )[0];
   selectedOption.setAttribute("selected", "selected");
   return selectedOption;
 };
-const selectCountry = () => {
-  const countryList = document.querySelector(".country__list");
+const countryList = document.querySelector(".country__list");
+countryList &&
   countryList.addEventListener("click", (e) => {
-    const itemImage = e.target
-      .closest(".country__Iteminfo")
-      .querySelector("img");
-    const itemName = e.target
-      .closest(".country__Iteminfo")
-      .querySelector("span");
+    const clickedCountry = e.target.closest(".country__Iteminfo");
+    const itemImage = clickedCountry.querySelector("img");
+    const itemName = clickedCountry.querySelector("span");
     const countrySelectedFlag = document.querySelector(".country__select img");
     const countrySelectedName = document.querySelector(
       ".country__select span:last-child",
@@ -352,14 +348,9 @@ const selectCountry = () => {
     changeCountryNumberKey(itemName.innerHTML);
     countryList.classList.remove("active");
   });
-};
-selectCountry();
 
 const changeCountryNumberKey = (countryName) => {
   const countryNumberCode = document.querySelector("#basic-addon1");
-  const formSelectOptions = [
-    ...document.querySelector(".form__select").children,
-  ];
   const selected = formSelectOptions.filter((option) =>
     option.hasAttribute("selected"),
   )[0];
