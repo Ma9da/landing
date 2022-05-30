@@ -256,6 +256,12 @@ nav.bg-dark {
 .mission {
 	background: #f2f0f0;
 }
+.mission .mission__description{
+	margin-inline-start: auto;
+}
+.mission p{
+	text-align: justify;
+}
 .mission .title,
 .vision .title {
 	font-size: 35px !important;
@@ -265,6 +271,12 @@ nav.bg-dark {
 }
 .vision {
 	background-color: #ffff;
+}
+.vision .vision__description{
+	margin-inline-end: auto;
+}
+.vision p{
+	text-align: justify;
 }
 .footer {
 	background-color: #000000;

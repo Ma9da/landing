@@ -1278,6 +1278,11 @@ html[dir="rtl"] .new__projectsControls button span:nth-of-type(1) {
           transform: rotate(180deg) !important;
 }
 
+html[dir="rtl"] .mission img, html[dir="rtl"] .vision img {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
 .form__selectCountryWrapper button {
   padding-block: 10px !important;
   -webkit-column-gap: 10px;

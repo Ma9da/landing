@@ -1055,6 +1055,9 @@ html {
                 }
             }
         }
+        .mission img, .vision img{
+            transform: scaleX(-1);
+        }
     }
 }
 .form__selectCountryWrapper{
