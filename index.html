@@ -1,1096 +1,873 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title data-lang="Home Page">Home Page</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title data-lang="Home Page">Home Page</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./styles/bootstrap.min.css" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./styles/main-style.css" />
-    <script defer src="./js/bootstrap.bundle.min.js"></script>
-    <script defer src="./js/script.js"></script>
-    <script defer src="./main.js"></script>
-  </head>
-  <body>
-    <!-- ========== Start navbar ========== -->
-    <nav
-      class="navbar navbar-expand-lg nav__radius top-0 position-absolute w-100 navbar-dark bg-dark"
-    >
-      <div class="container">
-        <a class="navbar__customBrand navbar-brand" href="./index.html">
-          <img
-            src="./assests/shared/details-logo.png"
-            alt=""
-            class="d-inline-block align-text-top"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-around"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a
-                data-lang="Home"
-                class="nav-link px-4 text-uppercase active"
-                aria-current="page"
-                href="./index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                data-lang="about us"
-                class="nav-link px-4 text-uppercase dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                about us
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a
-                    data-lang="board of directors"
-                    class="dropdown-item text-uppercase"
-                    href="./chairman.html"
-                    >board of directors</a
-                  >
-                </li>
-                <li>
-                  <a
-                    data-lang="company"
-                    class="dropdown-item text-uppercase"
-                    href="./company.html"
-                    >company</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a
-                data-lang="projects"
-                class="nav-link px-4 text-uppercase"
-                href="./projects.html"
-                >projects</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                data-lang="news"
-                class="nav-link px-4 text-uppercase"
-                href="./news.html"
-                >news</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                data-lang="gallery"
-                class="nav-link px-4 text-uppercase"
-                href="#"
-                >gallery</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                data-lang="contact us"
-                class="nav-link px-4 text-uppercase rounded-pill bg-secondary"
-                href="./contact-us.html"
-                >contact us</a
-              >
-            </li>
-          </ul>
-          <div class="lang__buttonWrapper d-flex align-items-center">
-            <button class="lang__button">
-              <span>
-                <i class="nav-link fa-solid fa-globe"></i>
-              </span>
-            </button>
-            <span class="lang__text">EN</span>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- ========== End navbar ========== -->
-    <!-- ========== Start slider ========== -->
-    <div class="">
-      <div
-        id="carouselExampleCaptions"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="3"
-            aria-current="true"
-            aria-label="Slide 4"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="4"
-            aria-current="true"
-            aria-label="Slide 5"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="./assets/home-imgs.jpg"
-              class="position-relative d-block w-100"
-              alt=""
-            />
-            <div class="slider__overlay position-absolute"></div>
-            <div class="carousel-caption d-none d-md-block">
-              <div class="row justify-content-between">
-                <div class="col-4">
-                  <h1 data-lang="al malga" class="title text-light">
-                    al malga
-                  </h1>
-                  <p data-lang="project 1" class="text-light">project 1</p>
-                </div>
-                <div class="col-1">
-                  <button
-                    class="btn btn-dark fs-1 rounded-pill px-4"
-                    type="button"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasRight1"
-                    aria-controls="offcanvasRight1"
-                  >
-                    <i class="fa-solid fa-chevron-left"></i>
-                  </button>
-                  <div
-                    class="offcanvas show offcanvas-end"
-                    tabindex="-1"
-                    id="offcanvasRight1"
-                    aria-labelledby="offcanvasRightLabel"
-                    data-bs-scroll="true"
-                    data-bs-backdrop="false"
-                  >
-                    <div class="offcanvas-body">
-                      <form class="sliderForm w-50" action="">
-                        <div class="d-flex justify-content-between">
-                          <h3 data-lang="Register your interest">
-                            Register your interest
-                          </h3>
-                          <button
-                            data-lang="send"
-                            class="btn btn-dark fs-3 text-capitalize"
-                            type="submit"
-                          >
-                            send
-                          </button>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                          <label
-                            data-lang="username"
-                            class="visually-hidden"
-                            for="sliderUsername"
-                            >username</label
-                          >
-                          <input
-                            type="text"
-                            class="me-4"
-                            placeholder="username"
-                            name="sliderUsername"
-                            id="sliderUsername"
-                          />
-                          <label
-                            data-lang="phone"
-                            class="visually-hidden"
-                            for="sliderPhone"
-                            >phone</label
-                          >
-                          <input
-                            type="tel"
-                            placeholder="phone"
-                            name="sliderPhone"
-                            id="sliderPhone"
-                          />
-                        </div>
-                        <label
-                          data-lang="email"
-                          class="visually-hidden"
-                          for="sliderEmail"
-                          >email</label
-                        >
-                        <input
-                          type="sliderEmail"
-                          class="d-block"
-                          placeholder="Email"
-                          name="sliderEmail"
-                          id="sliderEmail"
-                        />
-                        <label
-                          data-lang="message"
-                          class="visually-hidden"
-                          for="sliderMesssage"
-                          >message</label
-                        >
-                        <textarea
-                          name="sliderMesssage"
-                          id="sliderMesssage"
-                          placeholder="Your Message"
-                          rows="5"
-                        ></textarea>
-                      </form>
-                      <button
-                        type="button"
-                        class="form__dismiss rounded-pill px-4 btn fs-1 text-light btn-lg"
-                        data-bs-dismiss="offcanvas"
-                        aria-label="Close"
-                      >
-                        <i class="fa-solid fa-chevron-right"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row justify-content-center">
-                <div class="col-6">
-                  <h1
-                    data-lang="modern lifestyle"
-                    class="title sliderTitle text-light pe-4"
-                  >
-                    modern lifestyle
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./assets/a4390ac8-a645-41d5-87d7-916305c0c5fa.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="slider__overlay position-absolute"></div>
-            <div class="carousel-caption d-none d-md-block">
-              <div class="row justify-content-between">
-                <div class="col-4">
-                  <h1 data-lang="al arrid" class="title text-light">
-                    al arrid
-                  </h1>
-                  <p data-lang="project 2" class="text-light">project 2</p>
-                </div>
-                <div class="col-1">
-                  <button
-                    class="btn btn-dark fs-1 rounded-pill px-4"
-                    type="button"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasRight2"
-                    aria-controls="offcanvasRight2"
-                  >
-                    <i class="fa-solid fa-chevron-left"></i>
-                  </button>
-                  <div
-                    class="offcanvas offcanvas-end"
-                    tabindex="-1"
-                    id="offcanvasRight2"
-                    aria-labelledby="offcanvasRightLabel"
-                    data-bs-scroll="true"
-                    data-bs-backdrop="false"
-                  >
-                    <div class="offcanvas-body">
-                      <form class="sliderForm w-50" action="">
-                        <div class="d-flex justify-content-between">
-                          <h3 data-lang="Register your interest">
-                            Register your interest
-                          </h3>
-                          <button
-                            data-lang="send"
-                            class="btn btn-dark fs-3 text-capitalize"
-                            type="submit"
-                          >
-                            send
-                          </button>
-                        </div>
-                        <div
-                          data-lang="username"
-                          class="d-flex justify-content-between"
-                        >
-                          <label class="visually-hidden" for="sliderUsername"
-                            >username</label
-                          >
-                          <input
-                            type="text"
-                            class="me-4"
-                            placeholder="username"
-                            name="sliderUsername"
-                            id="sliderUsername"
-                          />
-                          <label
-                            data-lang="phone"
-                            class="visually-hidden"
-                            for="sliderPhone"
-                            >phone</label
-                          >
-                          <input
-                            type="tel"
-                            placeholder="phone"
-                            name="sliderPhone"
-                            id="sliderPhone"
-                          />
-                        </div>
-                        <label
-                          data-lang="email"
-                          class="visually-hidden"
-                          for="sliderEmail"
-                          >email</label
-                        >
-                        <input
-                          type="sliderEmail"
-                          class="d-block"
-                          placeholder="Email"
-                          name="sliderEmail"
-                          id="sliderEmail"
-                        />
-                        <label
-                          data-lang="message"
-                          class="visually-hidden"
-                          for="sliderMesssage"
-                          >message</label
-                        >
-                        <textarea
-                          name="sliderMesssage"
-                          id="sliderMesssage"
-                          placeholder="Your Message"
-                          rows="5"
-                        ></textarea>
-                      </form>
-                      <button
-                        type="button"
-                        class="form__dismiss rounded-pill px-4 btn fs-1 text-light btn-lg"
-                        data-bs-dismiss="offcanvas"
-                        aria-label="Close"
-                      >
-                        <i class="fa-solid fa-chevron-right"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row justify-content-center">
-                <div class="col-6">
-                  <h1
-                    data-lang="modern lifestyle"
-                    class="title sliderTitle text-light pe-4"
-                  >
-                    modern lifestyle
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./assets/gabe-pierce-2w46Lv6EYT4-unsplash.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="slider__overlay position-absolute"></div>
-            <div class="carousel-caption d-none d-md-block">
-              <div class="row justify-content-between">
-                <div class="col-4">
-                  <h1 data-lang="kids area" class="title text-light">
-                    kids area
-                  </h1>
-                  <p data-lang="services" class="text-light">services</p>
-                </div>
-                <div class="col-1">
-                  <button
-                    class="btn btn-dark fs-1 rounded-pill px-4"
-                    type="button"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasRight3"
-                    aria-controls="offcanvasRight3"
-                  >
-                    <i class="fa-solid fa-chevron-left"></i>
-                  </button>
-                  <div
-                    class="offcanvas offcanvas-end"
-                    tabindex="-1"
-                    id="offcanvasRight3"
-                    aria-labelledby="offcanvasRightLabel"
-                    data-bs-scroll="true"
-                    data-bs-backdrop="false"
-                  >
-                    <div class="offcanvas-body">
-                      <form class="sliderForm w-50" action="">
-                        <div class="d-flex justify-content-between">
-                          <h3 data-lang="Register your interest">
-                            Register your interest
-                          </h3>
-                          <button
-                            data-lang="send"
-                            class="btn btn-dark fs-3 text-capitalize"
-                            type="submit"
-                          >
-                            send
-                          </button>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                          <label
-                            data-lang="username"
-                            class="visually-hidden"
-                            for="sliderUsername"
-                            >username</label
-                          >
-                          <input
-                            type="text"
-                            class="me-4"
-                            placeholder="username"
-                            name="sliderUsername"
-                            id="sliderUsername"
-                          />
-                          <label
-                            data-lang="phone"
-                            class="visually-hidden"
-                            for="sliderPhone"
-                            >phone</label
-                          >
-                          <input
-                            type="tel"
-                            placeholder="phone"
-                            name="sliderPhone"
-                            id="sliderPhone"
-                          />
-                        </div>
-                        <label
-                          data-lang="email"
-                          class="visually-hidden"
-                          for="sliderEmail"
-                          >email</label
-                        >
-                        <input
-                          type="sliderEmail"
-                          class="d-block"
-                          placeholder="Email"
-                          name="sliderEmail"
-                          id="sliderEmail"
-                        />
-                        <label
-                          data-lang="message"
-                          class="visually-hidden"
-                          for="sliderMesssage"
-                          >message</label
-                        >
-                        <textarea
-                          name="sliderMesssage"
-                          id="sliderMesssage"
-                          placeholder="Your Message"
-                          rows="5"
-                        ></textarea>
-                      </form>
-                      <button
-                        type="button"
-                        class="form__dismiss rounded-pill px-4 btn fs-1 text-light btn-lg"
-                        data-bs-dismiss="offcanvas"
-                        aria-label="Close"
-                      >
-                        <i class="fa-solid fa-chevron-right"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row justify-content-center">
-                <div class="col-6">
-                  <h1
-                    data-lang="luxurious residential experience"
-                    class="title sliderTitle text-light pe-4"
-                  >
-                    luxurious residential experience
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./assets/samuel-girven-fqMu99l8sqo-unsplash.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="slider__overlay position-absolute"></div>
-            <div class="carousel-caption d-none d-md-block">
-              <div class="row justify-content-between">
-                <div class="col-4">
-                  <h1 data-lang="gym" class="title text-light">gym</h1>
-                  <p data-lang="services" class="text-light">services</p>
-                </div>
-                <div class="col-1">
-                  <button
-                    class="btn btn-dark fs-1 rounded-pill px-4"
-                    type="button"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasRight4"
-                    aria-controls="offcanvasRight4"
-                  >
-                    <i class="fa-solid fa-chevron-left"></i>
-                  </button>
-                  <div
-                    class="offcanvas offcanvas-end"
-                    tabindex="-1"
-                    id="offcanvasRight4"
-                    aria-labelledby="offcanvasRightLabel"
-                    data-bs-scroll="true"
-                    data-bs-backdrop="false"
-                  >
-                    <div class="offcanvas-body">
-                      <form class="sliderForm w-50" action="">
-                        <div class="d-flex justify-content-between">
-                          <h3 data-lang="Register your interest">
-                            Register your interest
-                          </h3>
-                          <button
-                            data-lang="send"
-                            class="btn btn-dark fs-3 text-capitalize"
-                            type="submit"
-                          >
-                            send
-                          </button>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                          <label
-                            data-lang="username"
-                            class="visually-hidden"
-                            for="sliderUsername"
-                            >username</label
-                          >
-                          <input
-                            type="text"
-                            class="me-4"
-                            placeholder="username"
-                            name="sliderUsername"
-                            id="sliderUsername"
-                          />
-                          <label
-                            data-lang="phone"
-                            class="visually-hidden"
-                            for="sliderPhone"
-                            >phone</label
-                          >
-                          <input
-                            type="tel"
-                            placeholder="phone"
-                            name="sliderPhone"
-                            id="sliderPhone"
-                          />
-                        </div>
-                        <label
-                          data-lang="email"
-                          class="visually-hidden"
-                          for="sliderEmail"
-                          >email</label
-                        >
-                        <input
-                          type="sliderEmail"
-                          class="d-block"
-                          placeholder="Email"
-                          name="sliderEmail"
-                          id="sliderEmail"
-                        />
-                        <label
-                          data-lang="message"
-                          class="visually-hidden"
-                          for="sliderMesssage"
-                          >message</label
-                        >
-                        <textarea
-                          name="sliderMesssage"
-                          id="sliderMesssage"
-                          placeholder="Your Message"
-                          rows="5"
-                        ></textarea>
-                      </form>
-                      <button
-                        type="button"
-                        class="form__dismiss rounded-pill px-4 btn fs-1 text-light btn-lg"
-                        data-bs-dismiss="offcanvas"
-                        aria-label="Close"
-                      >
-                        <i class="fa-solid fa-chevron-right"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row justify-content-center">
-                <div class="col-6">
-                  <h1
-                    data-lang="the dwelling of the future"
-                    class="title sliderTitle text-light pe-4"
-                  >
-                    the dwelling of the future
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./assets/javier-tavara-mT2E0q9Ears-unsplash.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="slider__overlay position-absolute"></div>
-            <div class="carousel-caption d-none d-md-block">
-              <div class="row justify-content-between">
-                <div class="col-4">
-                  <h1 data-lang="green spaces" class="title text-light">
-                    green spaces
-                  </h1>
-                  <p data-lang="services" class="text-light">services</p>
-                </div>
-                <div class="col-1">
-                  <button
-                    class="btn btn-dark fs-1 rounded-pill px-4"
-                    type="button"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasRight5"
-                    aria-controls="offcanvasRight5"
-                  >
-                    <i class="fa-solid fa-chevron-left"></i>
-                  </button>
-                  <div
-                    class="offcanvas offcanvas-end"
-                    tabindex="-1"
-                    id="offcanvasRight5"
-                    aria-labelledby="offcanvasRightLabel"
-                    data-bs-scroll="true"
-                    data-bs-backdrop="false"
-                  >
-                    <div class="offcanvas-body">
-                      <form class="sliderForm w-50" action="">
-                        <div class="d-flex justify-content-between">
-                          <h3 data-lang="Register your interest">
-                            Register your interest
-                          </h3>
-                          <button
-                            class="btn btn-dark fs-3 text-capitalize"
-                            type="submit"
-                          >
-                            send
-                          </button>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                          <label class="visually-hidden" for="sliderUsername"
-                            >username</label
-                          >
-                          <input
-                            type="text"
-                            class="me-4"
-                            placeholder="username"
-                            name="sliderUsername"
-                            id="sliderUsername"
-                          />
-                          <label
-                            data-lang="phone"
-                            class="visually-hidden"
-                            for="sliderPhone"
-                            >phone</label
-                          >
-                          <input
-                            type="tel"
-                            placeholder="phone"
-                            name="sliderPhone"
-                            id="sliderPhone"
-                          />
-                        </div>
-                        <label
-                          data-lang="email"
-                          class="visually-hidden"
-                          for="sliderEmail"
-                          >email</label
-                        >
-                        <input
-                          type="sliderEmail"
-                          class="d-block"
-                          placeholder="Email"
-                          name="sliderEmail"
-                          id="sliderEmail"
-                        />
-                        <label
-                          data-lang="message"
-                          class="visually-hidden"
-                          for="sliderMesssage"
-                          >message</label
-                        >
-                        <textarea
-                          name="sliderMesssage"
-                          id="sliderMesssage"
-                          placeholder="Your Message"
-                          rows="5"
-                        ></textarea>
-                      </form>
-                      <button
-                        type="button"
-                        class="form__dismiss rounded-pill px-4 btn fs-1 text-light btn-lg"
-                        data-bs-dismiss="offcanvas"
-                        aria-label="Close"
-                      >
-                        <i class="fa-solid fa-chevron-right"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row justify-content-center">
-                <div class="col-6">
-                  <h1
-                    data-lang="all roads lead to details"
-                    class="title sliderTitle text-light pe-4"
-                  >
-                    all roads lead to details
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ========== End slider ========== -->
-    <!-- ========== Start details ========== -->
-    <section class="details">
-      <div class="details-bg">
-        <div class="container">
-          <div class="row py-5 justify-content-center align-items-center">
-            <div class="col-lg-9 col-sm-6">
-              <h1 data-lang="details developments" class="title mb-3">
-                details developments
-              </h1>
-              <figcaption
-                data-lang="our projects"
-                class="mb-3 sub__title blockquote-footer"
-              >
-                our projects
-              </figcaption>
-            </div>
-            <div class="col-lg-2 d-none d-lg-block">
-              <figure>
-                <img class="w-100" src="./assets/contract.png" alt="" />
-              </figure>
-            </div>
-            <div class="row">
-              <div class="col-lg-4 col-sm-10">
-                <a href="./al-malga.html">
-                  <figure class="figure">
-                    <div class="geeks position-relative">
-                      <img
-                        src="./assets/project-2.jpg"
-                        class="figure-img img-fluid mb-0"
-                        alt="..."
-                      />
-                      <div
-                        class="details__img-hover d-flex justify-content-center align-items-center position-absolute"
-                      >
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                      </div>
-                    </div>
-                    <figcaption class="figure-caption">
-                      <p data-lang="Al malga" class="details__card-title my-2">
-                        Al malga
-                      </p>
-                      <div class="details__caption-hover">
-                        <div
-                          class="d-flex justify-content-between py-3 text-dark"
-                        >
-                          <div>
-                            <i class="fa-solid fa-house text-dark"></i>
-                            <span data-lang="1 building">1 building</span>
-                          </div>
-                          <div>
-                            <i class="fa-solid fa-building"></i>
-                            <span data-lang="14 apartments">14 apartments</span>
-                          </div>
-                        </div>
-                        <p data-lang="details-description" class="text-dark">
-                          featuring high-quality finishing and world-class
-                          amenities offering its residents the ultimate
-                          contemporary lifestyle experience
-                        </p>
-                      </div>
-                    </figcaption>
-                  </figure>
-                </a>
-              </div>
-              <div class="col-lg-4 col-sm-10">
-                <a href="./al-arrid.html">
-                  <figure class="figure">
-                    <div class="position-relative">
-                      <img
-                        src="./assets/project.jpg"
-                        class="figure-img img-fluid mb-0"
-                        alt="..."
-                      />
-                      <div
-                        class="details__img-hover d-flex justify-content-center align-items-center position-absolute"
-                      >
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                      </div>
-                    </div>
-                    <figcaption class="figure-caption">
-                      <p data-lang="Al-Arrid" class="details__card-title my-2">
-                        Al-Arrid
-                      </p>
-                      <div class="details__caption-hover">
-                        <div
-                          class="d-flex justify-content-between py-3 text-dark"
-                        >
-                          <div>
-                            <i class="fa-solid fa-house text-dark"></i>
-                            <span data-lang="1 building">1 building</span>
-                          </div>
-                          <div>
-                            <i class="fa-solid fa-building"></i>
-                            <span data-lang="14 apartments">14 apartments</span>
-                          </div>
-                        </div>
-                        <p data-lang="details-description" class="text-dark">
-                          featuring high-quality finishing and world-class
-                          amenities offering its residents the ultimate
-                          contemporary lifestyle experience
-                        </p>
-                      </div>
-                    </figcaption>
-                  </figure>
-                </a>
-              </div>
-              <div class="col-lg-4 col-sm-10">
-                <a href="#">
-                  <figure class="figure">
-                    <div class="position-relative">
-                      <img
-                        src="./assets/project-2.jpg"
-                        class="figure-img img-fluid mb-0"
-                        alt="..."
-                      />
-                      <div
-                        class="details__img-hover d-flex justify-content-center align-items-center position-absolute"
-                      >
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                      </div>
-                    </div>
-                    <figcaption class="figure-caption">
-                      <p data-lang="Al-Narijs" class="details__card-title my-2">
-                        Al-Narijs
-                      </p>
-                      <div class="details__caption-hover">
-                        <div
-                          class="d-flex justify-content-between py-3 text-dark"
-                        >
-                          <div>
-                            <i class="fa-solid fa-house text-dark"></i>
-                            <span data-lang="1 building">1 building</span>
-                          </div>
-                          <div>
-                            <i class="fa-solid fa-building"></i>
-                            <span data-lang="14 apartments">14 apartments</span>
-                          </div>
-                        </div>
-                        <p data-lang="details-description" class="text-dark">
-                          featuring high-quality finishing and world-class
-                          amenities offering its residents the ultimate
-                          contemporary lifestyle experience
-                        </p>
-                      </div>
-                    </figcaption>
-                  </figure>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ========== End details ========== -->
-    <!-- ========== Start mission ========== -->
-    <div class="mission">
-      <div class="container-fluid">
-        <div class="row justify-content-end align-items-center">
-          <div class="col-lg-5 col-sm-12">
-            <h2 data-lang="our mission" class="title">
-              <i class="fa-solid fa-bullseye"></i>
-              our mission
-            </h2>
-            <p data-lang="mission-description" class="lh-lg fs-4 text-muted">
-              We seek to provide housing solutions that spreads happiness
-              through providing a comprehensive real estate service that meets
-              international standards and ensures customer satisfaction by our
-              highly qualified professional team
-            </p>
-          </div>
-          <div class="col-6 d-none d-lg-block">
-            <img src="./assets/mission.png" class="w-100" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ========== End mission ========== -->
-    <!-- ========== Start vision ========== -->
-    <div class="vision">
-      <div class="container-fluid">
-        <div class="row justify-content-between align-items-center">
-          <div class="col-6 d-none d-lg-block">
-            <img src="./assets/vision.png" class="w-100 h-100" alt="" />
-          </div>
-          <div class="col-lg-5 col-sm-12">
-            <h2 data-lang="our vision" class="title">
-              <i class="fa-solid fa-gem"></i> our vision
-            </h2>
-            <p data-lang="vision-description" class="lh-lg fs-4 text-muted">
-              Details Real Estate Company is looking forward to create an
-              integrated lifestyle for all its clients and to be the first
-              choice for individuals who wants to own a home with the best
-              residential quality level
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ========== End vision ========== -->
-    <!-- ========== Start contact ========== -->
-    <section class="contact">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-7 col-sm-12">
-            <h1 data-lang="contact us" class="title">contact us</h1>
-            <div class="d-flex justify-content-between py-3 d-none d-lg-flex">
-              <div class="d-flex align-items-baseline">
-                <button class="btn btn-dark">
-                  <i class="fa-solid fs-4 fa-phone"></i>
-                </button>
-                <div>
-                  <span class="ms-3 fs-3"> 920000718 </span>
-                  <p data-lang="Call-Free" class="ms-3 text-muted">Call-Free</p>
-                </div>
-              </div>
-              <div class="d-flex align-items-baseline">
-                <button class="btn btn-dark">
-                  <i class="fa-solid fs-4 fa-envelope"></i>
-                </button>
-                <span class="ms-3 fs-3"> info@details-re.com </span>
-              </div>
-            </div>
-            <form action="">
-              <h3 data-lang="Or Send Us A Message:" class="d-none d-lg-block">
-                Or Send Us A Message:
-              </h3>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="./styles/bootstrap.min.css" />
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="./styles/main-style.css" />
+		<script defer src="./js/bootstrap.bundle.min.js"></script>
+		<script defer src="./js/script.js"></script>
+		<script defer src="./main.js"></script>
+	</head>
 
-              <label data-lang="Name" for="name" class="visually-hidden"
-                >Name</label
-              >
-              <input
-                class="form-control mb-4"
-                type="text"
-                placeholder="Name"
-                id="name"
-              />
-              <label data-lang="Email" for="email" class="visually-hidden"
-                >Email</label
-              >
-              <input
-                class="form-control mb-4"
-                type="email"
-                placeholder="Email"
-                id="email"
-              />
-              <select class="form-control mb-4">
-                <option data-lang="saudi" selected>
-                  <img src="./assets/saudi.png" alt="" />
-                  saudi
-                </option>
-                <option data-lang="One" value="1">One</option>
-                <option data-lang="Two" value="2">Two</option>
-                <option data-lang="Three" value="3">Three</option>
-              </select>
-              <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">+966</span>
-                <input
-                  type="text"
-                  class="form-control"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-              <label data-lang="Message" for="message" class="visually-hidden"
-                >Message</label
-              >
-              <textarea
-                class="form-control"
-                name="message"
-                placeholder="Write Message"
-                id="message"
-                cols="10"
-                rows="5"
-              ></textarea>
-              <button
-                data-lang="Submit Now"
-                type="submit"
-                class="btn fs-3 mt-5 form__submit"
-              ></button>
-            </form>
-          </div>
-          <div class="col-lg-5 col-sm-12">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463879.26522846974!2d46.54234300535662!3d24.72493157427095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1653689286424!5m2!1sen!2sus"
-              class="w-100"
-              height="650"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ========== End contact ========== -->
-    <!-- ========== End contact ========== -->
-    <!-- ========== Start animationBg ========== -->
-    <!-- <div class="animationBg d-none d-lg-block">
+	<body>
+		<!-- ========== Start navbar ========== -->
+		<nav
+			class="navbar navbar-expand-lg nav__radius top-0 position-absolute w-100 navbar-dark bg-dark"
+		>
+			<div class="container">
+				<a class="navbar__customBrand navbar-brand" href="./index.html">
+					<img
+						src="./assests/shared/details-logo.png"
+						alt=""
+						class="d-inline-block align-text-top"
+					/>
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div
+					class="collapse navbar-collapse justify-content-around"
+					id="navbarNav"
+				>
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a
+								data-lang="Home"
+								class="nav-link px-4 text-uppercase active"
+								aria-current="page"
+								href="./index.html"
+								>Home</a
+							>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								data-lang="about us"
+								class="nav-link px-4 text-uppercase dropdown-toggle"
+								href="#"
+								id="navbarDropdown"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								about us
+							</a>
+							<ul
+								class="dropdown-menu"
+								aria-labelledby="navbarDropdown"
+							>
+								<li>
+									<a
+										data-lang="board of directors"
+										class="dropdown-item text-uppercase"
+										href="./chairman.html"
+										>board of directors</a
+									>
+								</li>
+								<li>
+									<a
+										data-lang="company"
+										class="dropdown-item text-uppercase"
+										href="./company.html"
+										>company</a
+									>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a
+								data-lang="projects"
+								class="nav-link px-4 text-uppercase"
+								href="./projects.html"
+								>projects</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								data-lang="news"
+								class="nav-link px-4 text-uppercase"
+								href="./news.html"
+								>news</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								data-lang="gallery"
+								class="nav-link px-4 text-uppercase"
+								href="#"
+								>gallery</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								data-lang="contact us"
+								class="nav-link px-4 text-uppercase rounded-pill bg-secondary"
+								href="./contact-us.html"
+								>contact us</a
+							>
+						</li>
+					</ul>
+					<div class="lang__buttonWrapper d-flex align-items-center">
+						<button class="lang__button">
+							<span>
+								<i class="nav-link fa-solid fa-globe"></i>
+							</span>
+						</button>
+						<span class="lang__text">EN</span>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- ========== End navbar ========== -->
+		<!-- ========== Start slider ========== -->
+		<div class="">
+			<div
+				id="carouselExampleCaptions"
+				class="carousel slide"
+				data-bs-ride="carousel"
+			>
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#carouselExampleCaptions"
+						data-bs-slide-to="0"
+						class="active"
+						aria-current="true"
+						aria-label="Slide 1"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#carouselExampleCaptions"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#carouselExampleCaptions"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#carouselExampleCaptions"
+						data-bs-slide-to="3"
+						aria-current="true"
+						aria-label="Slide 4"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#carouselExampleCaptions"
+						data-bs-slide-to="4"
+						aria-current="true"
+						aria-label="Slide 5"
+					></button>
+				</div>
+				<!-- start floating button -->
+				<button
+					class="floating__btn btn fs-4 d-none d-md-block"
+					type="button"
+					data-bs-toggle="offcanvas"
+					data-bs-target="#offcanvasRight1"
+					aria-controls="offcanvasRight1"
+				>
+					<i class="fa-solid fa-angle-right"></i>
+				</button>
+				<!-- end floating button -->
+				<!-- start off canvas -->
+				<div
+					class="offcanvas offcanvas-end"
+					tabindex="-1"
+					id="offcanvasRight1"
+					aria-labelledby="offcanvasRightLabel"
+					data-bs-scroll="true"
+					data-bs-backdrop="false"
+				>
+					<div class="offcanvas-body">
+						<form class="sliderForm w-50 text-light" action="">
+							<div class="d-flex justify-content-between">
+								<h3 data-lang="Register your interest">
+									Register your interest
+								</h3>
+								<button
+									data-lang="send"
+									class="btn btn-dark fs-5 text-capitalize"
+									type="submit"
+								>
+									send
+								</button>
+							</div>
+							<div class="d-flex justify-content-between">
+								<div class="position-relative inputWidth">
+									<label
+										data-lang="username"
+										class="slider__form-label"
+										for="sliderUsername"
+									>
+										<span class="me-2"
+											><i class="fa-solid fa-user"></i
+										></span>
+										username
+									</label>
+									<input
+										class="slider__form-input"
+										type="text"
+										name="sliderUsername"
+										id="sliderUsername"
+									/>
+								</div>
+								<div class="position-relative inputWidth">
+									<label
+										data-lang="phone"
+										class="slider__form-label"
+										for="sliderPhone"
+									>
+										<span class="me-2"
+											><i class="fa-solid fa-phone"></i
+										></span>
+										phone
+									</label>
+									<input
+										class="slider__form-input"
+										type="tel"
+										name="sliderPhone"
+										id="sliderPhone"
+									/>
+								</div>
+							</div>
+							<div class="position-relative">
+								<label
+									data-lang="email"
+									class="slider__form-label"
+									for="sliderEmail"
+								>
+									<span class="me-2"
+										><i class="fa-solid fa-envelope"></i
+									></span>
+									email
+								</label>
+								<input
+									class="slider__form-input"
+									type="sliderEmail"
+									class="d-block"
+									name="sliderEmail"
+									id="sliderEmail"
+								/>
+							</div>
+							<div class="position-relative">
+								<label
+									data-lang="message"
+									class="slider__form-label"
+									for="sliderMesssage"
+								>
+									<span class="me-2"
+										><i class="fa-solid fa-message"></i
+									></span>
+									message
+								</label>
+								<textarea
+									class="slider__form-input"
+									name="sliderMesssage"
+									id="sliderMesssage"
+									rows="4"
+								></textarea>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!-- end off canvas -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img
+							src="./assets/home-imgs.jpg"
+							class="position-relative d-block w-100"
+							alt=""
+						/>
+						<div class="slider__overlay position-absolute"></div>
+						<div class="carousel-caption d-none d-md-block">
+							<div class="row justify-content-between">
+								<div class="col-4">
+									<h1
+										data-lang="al malga"
+										class="title text-light"
+									>
+										al malga
+									</h1>
+									<p data-lang="project 1" class="text-light">
+										project 1
+									</p>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-6">
+									<h1
+										data-lang="modern lifestyle"
+										class="title sliderTitle text-light pe-4"
+									>
+										modern lifestyle
+									</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img
+							src="./assets/a4390ac8-a645-41d5-87d7-916305c0c5fa.jpg"
+							class="d-block w-100"
+							alt="..."
+						/>
+						<div class="slider__overlay position-absolute"></div>
+						<div class="carousel-caption d-none d-md-block">
+							<div class="row justify-content-between">
+								<div class="col-4">
+									<h1
+										data-lang="al arrid"
+										class="title text-light"
+									>
+										al arrid
+									</h1>
+									<p data-lang="project 2" class="text-light">
+										project 2
+									</p>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-6">
+									<h1
+										data-lang="modern lifestyle"
+										class="title sliderTitle text-light pe-4"
+									>
+										modern lifestyle
+									</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img
+							src="./assets/gabe-pierce-2w46Lv6EYT4-unsplash.jpg"
+							class="d-block w-100"
+							alt="..."
+						/>
+						<div class="slider__overlay position-absolute"></div>
+						<div class="carousel-caption d-none d-md-block">
+							<div class="row justify-content-between">
+								<div class="col-4">
+									<h1
+										data-lang="kids area"
+										class="title text-light"
+									>
+										kids area
+									</h1>
+									<p data-lang="services" class="text-light">
+										services
+									</p>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-6">
+									<h1
+										data-lang="luxurious residential experience"
+										class="title sliderTitle text-light pe-4"
+									>
+										luxurious residential experience
+									</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img
+							src="./assets/samuel-girven-fqMu99l8sqo-unsplash.jpg"
+							class="d-block w-100"
+							alt="..."
+						/>
+						<div class="slider__overlay position-absolute"></div>
+						<div class="carousel-caption d-none d-md-block">
+							<div class="row justify-content-between">
+								<div class="col-4">
+									<h1
+										data-lang="gym"
+										class="title text-light"
+									>
+										gym
+									</h1>
+									<p data-lang="services" class="text-light">
+										services
+									</p>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-6">
+									<h1
+										data-lang="the dwelling of the future"
+										class="title sliderTitle text-light pe-4"
+									>
+										the dwelling of the future
+									</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img
+							src="./assets/javier-tavara-mT2E0q9Ears-unsplash.jpg"
+							class="d-block w-100"
+							alt="..."
+						/>
+						<div class="slider__overlay position-absolute"></div>
+						<div class="carousel-caption d-none d-md-block">
+							<div class="row justify-content-between">
+								<div class="col-4">
+									<h1
+										data-lang="green spaces"
+										class="title text-light"
+									>
+										green spaces
+									</h1>
+									<p data-lang="services" class="text-light">
+										services
+									</p>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-6">
+									<h1
+										data-lang="all roads lead to details"
+										class="title sliderTitle text-light pe-4"
+									>
+										all roads lead to details
+									</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ========== End slider ========== -->
+		<!-- ========== Start details ========== -->
+		<section class="details">
+			<div class="details-bg">
+				<div class="container">
+					<div
+						class="row py-5 justify-content-center align-items-center"
+					>
+						<div class="col-lg-9 col-sm-6">
+							<h1
+								data-lang="details developments"
+								class="title mb-3"
+							>
+								details developments
+							</h1>
+							<figcaption
+								data-lang="our projects"
+								class="mb-3 sub__title blockquote-footer"
+							>
+								our projects
+							</figcaption>
+						</div>
+						<div class="col-lg-2 d-none d-lg-block">
+							<figure>
+								<img
+									class="w-100"
+									src="./assets/contract.png"
+									alt=""
+								/>
+							</figure>
+						</div>
+						<div class="row">
+							<div class="col-lg-4 col-sm-10">
+								<a href="./al-malga.html">
+									<figure class="figure">
+										<div class="geeks position-relative">
+											<img
+												src="./assets/project-2.jpg"
+												class="figure-img img-fluid mb-0"
+												alt="..."
+											/>
+											<div
+												class="details__img-hover d-flex justify-content-center align-items-center position-absolute"
+											>
+												<i
+													class="fa-solid fa-magnifying-glass"
+												></i>
+											</div>
+										</div>
+										<figcaption class="figure-caption">
+											<p
+												data-lang="Al malga"
+												class="details__card-title my-2"
+											>
+												Al malga
+											</p>
+											<div class="details__caption-hover">
+												<div
+													class="d-flex justify-content-between py-3 text-dark"
+												>
+													<div>
+														<i
+															class="fa-solid fa-house text-dark"
+														></i>
+														<span
+															data-lang="1 building"
+															>1 building</span
+														>
+													</div>
+													<div>
+														<i
+															class="fa-solid fa-building"
+														></i>
+														<span
+															data-lang="14 apartments"
+															>14 apartments</span
+														>
+													</div>
+												</div>
+												<p
+													data-lang="details-description"
+													class="text-dark"
+												>
+													featuring high-quality
+													finishing and world-class
+													amenities offering its
+													residents the ultimate
+													contemporary lifestyle
+													experience
+												</p>
+											</div>
+										</figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="col-lg-4 col-sm-10">
+								<a href="./al-arrid.html">
+									<figure class="figure">
+										<div class="position-relative">
+											<img
+												src="./assets/project.jpg"
+												class="figure-img img-fluid mb-0"
+												alt="..."
+											/>
+											<div
+												class="details__img-hover d-flex justify-content-center align-items-center position-absolute"
+											>
+												<i
+													class="fa-solid fa-magnifying-glass"
+												></i>
+											</div>
+										</div>
+										<figcaption class="figure-caption">
+											<p
+												data-lang="Al-Arrid"
+												class="details__card-title my-2"
+											>
+												Al-Arrid
+											</p>
+											<div class="details__caption-hover">
+												<div
+													class="d-flex justify-content-between py-3 text-dark"
+												>
+													<div>
+														<i
+															class="fa-solid fa-house text-dark"
+														></i>
+														<span
+															data-lang="1 building"
+															>1 building</span
+														>
+													</div>
+													<div>
+														<i
+															class="fa-solid fa-building"
+														></i>
+														<span
+															data-lang="14 apartments"
+															>14 apartments</span
+														>
+													</div>
+												</div>
+												<p
+													data-lang="details-description"
+													class="text-dark"
+												>
+													featuring high-quality
+													finishing and world-class
+													amenities offering its
+													residents the ultimate
+													contemporary lifestyle
+													experience
+												</p>
+											</div>
+										</figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="col-lg-4 col-sm-10">
+								<a href="#">
+									<figure class="figure">
+										<div class="position-relative">
+											<img
+												src="./assets/project-2.jpg"
+												class="figure-img img-fluid mb-0"
+												alt="..."
+											/>
+											<div
+												class="details__img-hover d-flex justify-content-center align-items-center position-absolute"
+											>
+												<i
+													class="fa-solid fa-magnifying-glass"
+												></i>
+											</div>
+										</div>
+										<figcaption class="figure-caption">
+											<p
+												data-lang="Al-Narijs"
+												class="details__card-title my-2"
+											>
+												Al-Narijs
+											</p>
+											<div class="details__caption-hover">
+												<div
+													class="d-flex justify-content-between py-3 text-dark"
+												>
+													<div>
+														<i
+															class="fa-solid fa-house text-dark"
+														></i>
+														<span
+															data-lang="1 building"
+															>1 building</span
+														>
+													</div>
+													<div>
+														<i
+															class="fa-solid fa-building"
+														></i>
+														<span
+															data-lang="14 apartments"
+															>14 apartments</span
+														>
+													</div>
+												</div>
+												<p
+													data-lang="details-description"
+													class="text-dark"
+												>
+													featuring high-quality
+													finishing and world-class
+													amenities offering its
+													residents the ultimate
+													contemporary lifestyle
+													experience
+												</p>
+											</div>
+										</figcaption>
+									</figure>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ========== End details ========== -->
+		<!-- ========== Start mission ========== -->
+		<div class="mission">
+			<div class="container-fluid">
+				<div class="row justify-content-end align-items-center">
+					<div class="col-lg-5 col-sm-12">
+						<h2 data-lang="our mission" class="title">
+							<i class="fa-solid fa-bullseye"></i>
+							our mission
+						</h2>
+						<p
+							data-lang="mission-description"
+							class="lh-lg fs-4 text-muted"
+						>
+							We seek to provide housing solutions that spreads
+							happiness through providing a comprehensive real
+							estate service that meets international standards
+							and ensures customer satisfaction by our highly
+							qualified professional team
+						</p>
+					</div>
+					<div class="col-6 d-none d-lg-block">
+						<img src="./assets/mission.png" class="w-100" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ========== End mission ========== -->
+		<!-- ========== Start vision ========== -->
+		<div class="vision">
+			<div class="container-fluid">
+				<div class="row justify-content-between align-items-center">
+					<div class="col-6 d-none d-lg-block">
+						<img
+							src="./assets/vision.png"
+							class="w-100 h-100"
+							alt=""
+						/>
+					</div>
+					<div class="col-lg-5 col-sm-12">
+						<h2 data-lang="our vision" class="title">
+							<i class="fa-solid fa-gem"></i> our vision
+						</h2>
+						<p
+							data-lang="vision-description"
+							class="lh-lg fs-4 text-muted"
+						>
+							Details Real Estate Company is looking forward to
+							create an integrated lifestyle for all its clients
+							and to be the first choice for individuals who wants
+							to own a home with the best residential quality
+							level
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ========== End vision ========== -->
+		<!-- ========== Start contact ========== -->
+		<section class="contact">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-7 col-sm-12">
+						<h1 data-lang="contact us" class="title">contact us</h1>
+						<div
+							class="d-flex justify-content-between py-3 d-none d-lg-flex"
+						>
+							<div class="d-flex align-items-baseline">
+								<button class="btn btn-dark">
+									<i class="fa-solid fs-4 fa-phone"></i>
+								</button>
+								<div>
+									<span class="ms-3 fs-3"> 920000718 </span>
+									<p
+										data-lang="Call-Free"
+										class="ms-3 text-muted"
+									>
+										Call-Free
+									</p>
+								</div>
+							</div>
+							<div class="d-flex align-items-baseline">
+								<button class="btn btn-dark">
+									<i class="fa-solid fs-4 fa-envelope"></i>
+								</button>
+								<span class="ms-3 fs-3">
+									info@details-re.com
+								</span>
+							</div>
+						</div>
+						<form action="">
+							<h3
+								data-lang="Or Send Us A Message:"
+								class="d-none d-lg-block"
+							>
+								Or Send Us A Message:
+							</h3>
+
+							<label
+								data-lang="Name"
+								for="name"
+								class="visually-hidden"
+								>Name</label
+							>
+							<input
+								class="form-control mb-4"
+								type="text"
+								placeholder="Name"
+								id="name"
+							/>
+							<label
+								data-lang="Email"
+								for="email"
+								class="visually-hidden"
+								>Email</label
+							>
+							<input
+								class="form-control mb-4"
+								type="email"
+								placeholder="Email"
+								id="email"
+							/>
+							<select class="form-control mb-4">
+								<option data-lang="saudi" selected>
+									<img src="./assets/saudi.png" alt="" />
+									saudi
+								</option>
+								<option data-lang="One" value="1">One</option>
+								<option data-lang="Two" value="2">Two</option>
+								<option data-lang="Three" value="3">
+									Three
+								</option>
+							</select>
+							<div class="input-group mb-3">
+								<span class="input-group-text" id="basic-addon1"
+									>+966</span
+								>
+								<input
+									type="text"
+									class="form-control"
+									aria-describedby="basic-addon1"
+								/>
+							</div>
+							<label
+								data-lang="Message"
+								for="message"
+								class="visually-hidden"
+								>Message</label
+							>
+							<textarea
+								class="form-control"
+								name="message"
+								placeholder="Write Message"
+								id="message"
+								cols="10"
+								rows="5"
+							></textarea>
+							<button
+								data-lang="Submit Now"
+								type="submit"
+								class="btn fs-3 mt-5 form__submit"
+							></button>
+						</form>
+					</div>
+					<div class="col-lg-5 col-sm-12">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463879.26522846974!2d46.54234300535662!3d24.72493157427095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1653689286424!5m2!1sen!2sus"
+							class="w-100"
+							height="650"
+							style="border: 0"
+							allowfullscreen=""
+							loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"
+						></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ========== End contact ========== -->
+		<!-- ========== End contact ========== -->
+		<!-- ========== Start animationBg ========== -->
+		<!-- <div class="animationBg d-none d-lg-block">
       <div class="container-fluid text-center">
         <img
           src="./assets//shutterstock_524543800 copy.png"
@@ -1100,173 +877,195 @@
       </div>
     </div> -->
 
-    <section class="background__imageAnimationWrapper">
-      <div class="background__imageAnimation"></div>
-    </section>
-    <!-- ========== Start footer ========== -->
-    <footer>
-      <div class="footer pt-3">
-        <div class="container">
-          <div class="row align-items-start pt-4">
-            <div class="col-lg-4 col-sm-12">
-              <h4 data-lang="company" class="footer__title">company</h4>
-              <ul class="list-unstyled">
-                <li>
-                  <span class="pe-3"
-                    ><i class="fa-solid fa-location-pin"></i
-                  ></span>
-                  <span data-lang="Kingdom of Saudi Arabia - Riyadh">
-                    Kingdom of Saudi Arabia - Riyadh
-                  </span>
-                </li>
-                <li>
-                  <span class="pe-3"><i class="fa-solid fa-phone"></i></span>
-                  <a
-                    class="text-light text-decoration-none"
-                    href="tel:920000718"
-                    >920000718</a
-                  >
-                </li>
-                <li>
-                  <span class="pe-3"><i class="fa-solid fa-envelope"></i></span>
-                  <a
-                    class="text-light text-decoration-none"
-                    href="mailto:info@details-re.com"
-                    >info@details-re.com</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-2 col-sm-12">
-              <h4 data-lang="navigation" class="footer__title">navigation</h4>
-              <ul class="list-unstyled">
-                <li>
-                  <a
-                    data-lang="home"
-                    href="./index.html"
-                    class="text-decoration-none text-light text-capitalize"
-                    >home</a
-                  >
-                </li>
-                <li>
-                  <a
-                    data-lang="about us"
-                    href="./chairman.html"
-                    class="text-decoration-none text-light text-capitalize"
-                    >about us</a
-                  >
-                </li>
-                <li>
-                  <a
-                    data-lang="news"
-                    href="./news.html"
-                    class="text-decoration-none text-light text-capitalize"
-                    >news</a
-                  >
-                </li>
-                <li>
-                  <a
-                    data-lang="contact"
-                    href="./contact-us.html"
-                    class="text-decoration-none text-light text-capitalize"
-                    >contact</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-2 col-sm-12">
-              <h4 data-lang="projects" class="footer__title">projects</h4>
-              <ul class="list-unstyled">
-                <li>
-                  <a
-                    data-lang="al malga"
-                    href="./al-malga.html"
-                    class="text-decoration-none text-light text-capitalize"
-                    >al malga</a
-                  >
-                </li>
-                <li>
-                  <a
-                    data-lang="al-Arrid"
-                    href="./al-arrid.html"
-                    class="text-decoration-none text-light text-capitalize"
-                    >al-Arrid</a
-                  >
-                </li>
-                <li>
-                  <a
-                    data-lang="al-Narjis"
-                    href="#"
-                    class="text-decoration-none text-light text-capitalize"
-                    >al-Narjis</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-4 col-sm-4">
-              <figure>
-                <img class="w-100" src="./assets/logo.png" alt="" />
-              </figure>
-              <ul class="socials d-flex list-unstyled">
-                <li>
-                  <a href="#" id="facebook"
-                    ><i class="fa-brands fa-facebook-f"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="#" id="twitter"
-                    ><i class="fa-brands fa-twitter"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="#" id="instagram"
-                    ><i class="fa-brands fa-instagram"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="#" id="snapchat"
-                    ><i class="fa-brands fa-snapchat"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="#" id="youtube"
-                    ><i class="fa-brands fa-youtube"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="#" id="tiktok"
-                    ><i class="fa-brands fa-tiktok"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="#" id="linkedin"
-                    ><i class="fa-brands fa-linkedin"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="copwrite">
-        <div class="container">
-          <div
-            class="row text-center justify-content-center align-items-center"
-          >
-            <div class="col-12">
-              <p class="p-2 mb-0">
-                <span data-lang="Regxistering on this website, you accept out">
-                  Registering on this website, you accept out
-                </span>
-                <a data-lang="Terms of use" href="#">Terms of use</a>
-                <span data-lang="and our"> and our </span>
-                <a data-lang="Privacy Policy" href="#">Privacy policy</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- ========== End footer ========== -->
-  </body>
+		<section class="background__imageAnimationWrapper">
+			<div class="background__imageAnimation"></div>
+		</section>
+		<!-- ========== Start footer ========== -->
+		<footer>
+			<div class="footer pt-3">
+				<div class="container">
+					<div class="row align-items-start pt-4">
+						<div class="col-lg-4 col-sm-12">
+							<h4 data-lang="company" class="footer__title">
+								company
+							</h4>
+							<ul class="list-unstyled">
+								<li>
+									<span class="pe-3"
+										><i class="fa-solid fa-location-pin"></i
+									></span>
+									<span
+										data-lang="Kingdom of Saudi Arabia - Riyadh"
+									>
+										Kingdom of Saudi Arabia - Riyadh
+									</span>
+								</li>
+								<li>
+									<span class="pe-3"
+										><i class="fa-solid fa-phone"></i
+									></span>
+									<a
+										class="text-light text-decoration-none"
+										href="tel:920000718"
+										>920000718</a
+									>
+								</li>
+								<li>
+									<span class="pe-3"
+										><i class="fa-solid fa-envelope"></i
+									></span>
+									<a
+										class="text-light text-decoration-none"
+										href="mailto:info@details-re.com"
+										>info@details-re.com</a
+									>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-2 col-sm-12">
+							<h4 data-lang="navigation" class="footer__title">
+								navigation
+							</h4>
+							<ul class="list-unstyled">
+								<li>
+									<a
+										data-lang="home"
+										href="./index.html"
+										class="text-decoration-none text-light text-capitalize"
+										>home</a
+									>
+								</li>
+								<li>
+									<a
+										data-lang="about us"
+										href="./chairman.html"
+										class="text-decoration-none text-light text-capitalize"
+										>about us</a
+									>
+								</li>
+								<li>
+									<a
+										data-lang="news"
+										href="./news.html"
+										class="text-decoration-none text-light text-capitalize"
+										>news</a
+									>
+								</li>
+								<li>
+									<a
+										data-lang="contact"
+										href="./contact-us.html"
+										class="text-decoration-none text-light text-capitalize"
+										>contact</a
+									>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-2 col-sm-12">
+							<h4 data-lang="projects" class="footer__title">
+								projects
+							</h4>
+							<ul class="list-unstyled">
+								<li>
+									<a
+										data-lang="al malga"
+										href="./al-malga.html"
+										class="text-decoration-none text-light text-capitalize"
+										>al malga</a
+									>
+								</li>
+								<li>
+									<a
+										data-lang="al-Arrid"
+										href="./al-arrid.html"
+										class="text-decoration-none text-light text-capitalize"
+										>al-Arrid</a
+									>
+								</li>
+								<li>
+									<a
+										data-lang="al-Narjis"
+										href="#"
+										class="text-decoration-none text-light text-capitalize"
+										>al-Narjis</a
+									>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-4 col-sm-4">
+							<figure>
+								<img
+									class="w-100"
+									src="./assets/logo.png"
+									alt=""
+								/>
+							</figure>
+							<ul class="socials d-flex list-unstyled">
+								<li>
+									<a href="#" id="facebook"
+										><i class="fa-brands fa-facebook-f"></i
+									></a>
+								</li>
+								<li>
+									<a href="#" id="twitter"
+										><i class="fa-brands fa-twitter"></i
+									></a>
+								</li>
+								<li>
+									<a href="#" id="instagram"
+										><i class="fa-brands fa-instagram"></i
+									></a>
+								</li>
+								<li>
+									<a href="#" id="snapchat"
+										><i class="fa-brands fa-snapchat"></i
+									></a>
+								</li>
+								<li>
+									<a href="#" id="youtube"
+										><i class="fa-brands fa-youtube"></i
+									></a>
+								</li>
+								<li>
+									<a href="#" id="tiktok"
+										><i class="fa-brands fa-tiktok"></i
+									></a>
+								</li>
+								<li>
+									<a href="#" id="linkedin"
+										><i class="fa-brands fa-linkedin"></i
+									></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copwrite">
+				<div class="container">
+					<div
+						class="row text-center justify-content-center align-items-center"
+					>
+						<div class="col-12">
+							<p class="p-2 mb-0">
+								<span
+									data-lang="Regxistering on this website, you accept out"
+								>
+									Registering on this website, you accept out
+								</span>
+								<a data-lang="Terms of use" href="#"
+									>Terms of use</a
+								>
+								<span data-lang="and our"> and our </span>
+								<a data-lang="Privacy Policy" href="#"
+									>Privacy policy</a
+								>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- ========== End footer ========== -->
+	</body>
 </html>
