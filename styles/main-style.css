@@ -569,7 +569,7 @@
 }
 
 .project__attractionsMalga, .project__attractionsArrid {
-  padding-block: 30px 50px;
+  padding-top: 30px;
 }
 
 .project__attractionsMalga .section__title, .project__attractionsArrid .section__title {
@@ -593,6 +593,7 @@
   overflow-y: hidden;
   overflow-x: auto;
   padding-inline: 20px;
+  margin-bottom: 0;
 }
 
 .project__attractionsMalga .attractions__features .features__list::-webkit-scrollbar, .project__attractionsArrid .attractions__features .features__list::-webkit-scrollbar {
@@ -694,6 +695,10 @@
   .project__attractionsMalga .attractions__features .features__list li .feature__wrapper .feature__title, .project__attractionsArrid .attractions__features .features__list li .feature__wrapper .feature__title {
     font-size: 14px;
   }
+}
+
+.project__attractionsArrid .attractions__features .features__list {
+  height: 450px;
 }
 
 .project__attractionsArrid .attractions__features .features__list li {

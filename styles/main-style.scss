@@ -464,7 +464,7 @@
 }
 
 .project__attractionsMalga{
-    padding-block: 30px 50px;
+    padding-top: 30px;
     .section__title{
         font-size: 30px;
         font-weight: bold;
@@ -482,6 +482,7 @@
             overflow-y: hidden;
             overflow-x: auto;
             padding-inline: 20px;
+            margin-bottom: 0;
             &::-webkit-scrollbar{
                 width: 0;
             }
@@ -573,6 +574,7 @@
     @extend .project__attractionsMalga;
     .attractions__features{
         .features__list{
+            height: 450px;
             li{
                 min-width: calc(100% / 3);
                 &:nth-child(odd),&:nth-child(even){
