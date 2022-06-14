@@ -1168,6 +1168,9 @@
 }
 
 .units__slider .carousel__customCaption {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   position: absolute;
   width: -webkit-fit-content;
   width: -moz-fit-content;

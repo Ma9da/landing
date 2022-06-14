@@ -956,6 +956,7 @@
         }
     }
     .carousel__customCaption{
+        justify-content: end;
         position: absolute;
         width: fit-content;
         left: 5% !important;
