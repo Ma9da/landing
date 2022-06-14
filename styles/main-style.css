@@ -1174,6 +1174,7 @@
   width: fit-content;
   left: 5% !important;
   bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .units__slider .slider__customControls {
